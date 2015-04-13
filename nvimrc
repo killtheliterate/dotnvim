@@ -13,9 +13,11 @@ call neobundle#begin(expand('$HOME/.nvim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " PlPlPlugin:
+NeoBundle 'benekastah/neomake'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'bling/vim-bufferline'
 NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'floobits/floobits-neovim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'justinmk/vim-matchparenalways'
@@ -25,7 +27,6 @@ NeoBundle 'mhinz/vim-signify'
 NeoBundle 'mhinz/vim-startify'
 NeoBundle 'myusuf3/numbers.vim'
 NeoBundle 'rking/ag.vim'
-NeoBundle 'benekastah/neomake'
 NeoBundle 'sjl/vitality.vim'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-eunuch'
@@ -37,10 +38,14 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-vinegar'
 
+" NeoBundle 'mtth/scratch.vim'
+
 " TtTtTheme:
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'freeo/vim-kalisi'
 NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'chriskempson/base16-vim'
+
 
 " SySySyntax:
 NeoBundle 'cakebaker/scss-syntax.vim'
@@ -75,7 +80,9 @@ let mapleader = "\<Space>"
 
 " Theme:
 set guifont=Source\ Code\ Pro\ for\ Powerline:h13
-colorscheme solarized
+" colorscheme solarized
+colorscheme base16-default
+set background=dark
 if has('gui_running')
   set antialias
   set go-=T
@@ -113,6 +120,7 @@ set timeoutlen=1000
 set ttimeoutlen=10
 set clipboard+=unnamedplus
 set hidden
+set autochdir
 
 " B: search
 set hlsearch
@@ -176,12 +184,15 @@ au BufRead,BufNewFile *.scss set filetype=scss
 let g:airline_powerline_fonts = 1
 let g:airline_section_b = '%{getcwd()}'
 let g:airline_section_c = '%t'
+" let g:airline#extensions#tabline#enabled = 1
 
 " Startify:
 let g:startify_custom_header = map(split(system('figlet -f  rozzo "DOOM"'), '\n'), '"   ". v:val') + ['','']
 
 " Markdown:
 let g:vim_markdown_frontmatter=1
+au BufNewFile,BufReadPost *.md set filetype=markdown
+let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml', 'html']
 
 " Rainbow:
 let g:rbpt_max = 16
