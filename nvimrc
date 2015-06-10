@@ -21,11 +21,14 @@ NeoBundle 'floobits/floobits-neovim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'justinmk/vim-matchparenalways'
+NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'kien/rainbow_parentheses.vim'
+NeoBundle 'lukerandall/haskellmode-vim'
 NeoBundle 'matze/vim-move'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'mhinz/vim-startify'
 NeoBundle 'myusuf3/numbers.vim'
+NeoBundle 'reedes/vim-pencil'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'sjl/vitality.vim'
 NeoBundle 'tpope/vim-commentary'
@@ -40,6 +43,10 @@ NeoBundle 'tpope/vim-vinegar'
 
 " NeoBundle 'mtth/scratch.vim'
 
+" HTML, kill me
+NeoBundle 'Valloric/MatchTagAlways'
+NeoBundle 'gcmt/breeze.vim'
+
 " TtTtTheme:
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'freeo/vim-kalisi'
@@ -51,15 +58,20 @@ NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'cakebaker/scss-syntax.vim'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'idris-hackers/idris-vim'
-NeoBundle 'jelera/vim-javascript-syntax'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'mxw/vim-jsx'
-NeoBundle 'nono/vim-handlebars'
-NeoBundle 'pangloss/vim-javascript'
+" NeoBundle 'jelera/vim-javascript-syntax'
+" NeoBundle 'kchmck/vim-coffee-script'
+" NeoBundle 'mxw/vim-jsx'
+" NeoBundle 'nono/vim-handlebars'
+NeoBundle 'othree/javascript-libraries-syntax.vim'
+NeoBundle 'othree/yajs.vim'
+" NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'raichoo/haskell-vim'
 NeoBundle 'raichoo/purescript-vim'
 NeoBundle 'tpope/vim-liquid'
+
+
+
 
 " EtEtEtc:
 " things that require neobundle's additional setup
@@ -174,8 +186,17 @@ nnoremap <leader><leader> <c-^>
 hi MatchParen cterm=bold ctermbg=darkmagenta ctermfg=white
 hi Search cterm=NONE ctermfg=white ctermbg=5
 
-" stop sucking, sass
-au BufRead,BufNewFile *.scss set filetype=scss
+" Sass: stop sucking, sass
+au BufRead, BufNewFile *.scss set filetype=scss
+
+" Haskell: http://bit.ly/1GsSOnp
+au Bufenter *.hs compiler ghc
+let g:haddock_browser = "open"
+let g:haddock_browser_callformat = "%s %s"
+
+" HTML: and stuff
+au BufReadPost *.tpl set syntax=html "set syntax=html
+au BufNewFile,BufRead *.xml,*.tpl set filetype=html
 
 "" Plug plug plug plug
 "" ---------------------------------------------------------------------------
@@ -201,32 +222,33 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 let g:rbpt_colorpairs = [
-\ [ '13', '#6c71c4'],
-\ [ '5',  '#d33682'],
-\ [ '1',  '#dc322f'],
-\ [ '9',  '#cb4b16'],
-\ [ '3',  '#b58900'],
-\ [ '2',  '#859900'],
-\ [ '6',  '#2aa198'],
-\ [ '4',  '#268bd2'],
+    \ [ '13', '#6c71c4'],
+    \ [ '5',  '#d33682'],
+    \ [ '1',  '#dc322f'],
+    \ [ '9',  '#cb4b16'],
+    \ [ '3',  '#b58900'],
+    \ [ '2',  '#859900'],
+    \ [ '6',  '#2aa198'],
+    \ [ '4',  '#268bd2'],
 \]
 
 " MatchParenAlways:
 let g:blockify_pairs = {
-\ 'c':    [ '{', '}' ],
-\ 'cpp':  [ '{', '}' ],
-\ 'java': [ '{', '}' ],
-\ 'php': [ '{', '}' ],
-\ 'css': [ '{', '}' ],
-\ 'scss.css': [ '{', '}' ],
-\ 'scss': [ '{', '}' ],
-\ 'javascript': [ '{', '}' ],
-\ 'php.drupal': [ '{', '}' ],
+    \ 'c':    [ '{', '}' ],
+    \ 'cpp':  [ '{', '}' ],
+    \ 'java': [ '{', '}' ],
+    \ 'php': [ '{', '}' ],
+    \ 'css': [ '{', '}' ],
+    \ 'scss.css': [ '{', '}' ],
+    \ 'scss': [ '{', '}' ],
+    \ 'javascript': [ '{', '}' ],
+    \ 'php.drupal': [ '{', '}' ],
 \}
 
 " NeoMake:  
+" `cabal install ghc-mod` Haskell
+" `npm install jshint -g` JavaScript
 autocmd! BufWritePost * Neomake
-let g:neomake_make_modified=1
 let g:neomake_warning_sign = {
     \ 'text': '✗',
     \ 'texthl': 'ErrorMsg',
@@ -235,3 +257,36 @@ let g:neomake_error_sign = {
     \ 'text': '⚠',
     \ 'texthl': 'ErrorMsg',
     \ }
+
+" RevealInFinder: set this to leader-e
+function! s:RevealInFinder()
+  if filereadable(expand("%"))
+    let l:command = "open -R %"
+  elseif getftype(expand("%:p:h")) == "dir"
+    let l:command = "open %:p:h"
+  else
+    let l:command = "open ."
+  endif
+  execute ":silent! !" . l:command
+  redraw!
+endfunction
+command! Reveal call <SID>RevealInFinder()
+
+noremap <leader>e :Reveal<CR>
+
+" CtrlP: be faster
+let g:ctrlp_use_caching = 0
+if executable('ag')
+    set grepprg=ag\ --nogroup\ --nocolor
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+else
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+  let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<space>', '<cr>', '<2-LeftMouse>'],
+    \ }
+endif
+
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\.git$\|\.yardoc\|public$|log\|tmp$',
+    \ 'file': '\.so$\|\.dat$|\.DS_Store$'
+\ }
