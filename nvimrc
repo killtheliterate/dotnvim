@@ -17,13 +17,10 @@ NeoBundle 'benekastah/neomake'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'bling/vim-bufferline'
 NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'floobits/floobits-neovim'
-NeoBundle 'godlygeek/tabular'
 NeoBundle 'jiangmiao/auto-pairs'
-NeoBundle 'justinmk/vim-matchparenalways'
+" NeoBundle 'justinmk/vim-matchparenalways'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'kien/rainbow_parentheses.vim'
-NeoBundle 'lukerandall/haskellmode-vim'
 NeoBundle 'matze/vim-move'
 NeoBundle 'mhinz/vim-signify'
 NeoBundle 'mhinz/vim-startify'
@@ -41,9 +38,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-vinegar'
 
-" NeoBundle 'mtth/scratch.vim'
-
-" HTML, kill me
+" HhHhTML: kill me plox
 NeoBundle 'Valloric/MatchTagAlways'
 NeoBundle 'gcmt/breeze.vim'
 
@@ -53,28 +48,19 @@ NeoBundle 'freeo/vim-kalisi'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'chriskempson/base16-vim'
 
-
 " SySySyntax:
 NeoBundle 'cakebaker/scss-syntax.vim'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'idris-hackers/idris-vim'
-" NeoBundle 'jelera/vim-javascript-syntax'
 " NeoBundle 'kchmck/vim-coffee-script'
 " NeoBundle 'mxw/vim-jsx'
-" NeoBundle 'nono/vim-handlebars'
+NeoBundle 'nono/vim-handlebars'
 NeoBundle 'othree/javascript-libraries-syntax.vim'
 NeoBundle 'othree/yajs.vim'
-" NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'raichoo/haskell-vim'
 NeoBundle 'raichoo/purescript-vim'
 NeoBundle 'tpope/vim-liquid'
-
-
-
-
-" EtEtEtc:
-" things that require neobundle's additional setup
 
 call neobundle#end()
 
@@ -87,12 +73,10 @@ NeoBundleCheck
 "" ---------------------------------------------------------------------------
 
 syntax on
-" imap jk <esc>
 let mapleader = "\<Space>"
 
 " Theme:
 set guifont=Source\ Code\ Pro\ for\ Powerline:h13
-" colorscheme solarized
 colorscheme base16-default
 set background=dark
 if has('gui_running')
@@ -205,7 +189,6 @@ au BufNewFile,BufRead *.xml,*.tpl set filetype=html
 let g:airline_powerline_fonts = 1
 let g:airline_section_b = '%{getcwd()}'
 let g:airline_section_c = '%t'
-" let g:airline#extensions#tabline#enabled = 1
 
 " Startify:
 let g:startify_custom_header = map(split(system('figlet -f  rozzo "DOOM"'), '\n'), '"   ". v:val') + ['','']
@@ -213,7 +196,7 @@ let g:startify_custom_header = map(split(system('figlet -f  rozzo "DOOM"'), '\n'
 " Markdown:
 let g:vim_markdown_frontmatter=1
 au BufNewFile,BufReadPost *.md set filetype=markdown
-let g:markdown_fenced_languages = ['coffee', 'css', 'erb=eruby', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml', 'html']
+let g:markdown_fenced_languages = ['css', 'erb=eruby', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml', 'html']
 
 " Rainbow:
 let g:rbpt_max = 16
@@ -233,17 +216,23 @@ let g:rbpt_colorpairs = [
 \]
 
 " MatchParenAlways:
-let g:blockify_pairs = {
-    \ 'c':    [ '{', '}' ],
-    \ 'cpp':  [ '{', '}' ],
-    \ 'java': [ '{', '}' ],
-    \ 'php': [ '{', '}' ],
-    \ 'css': [ '{', '}' ],
-    \ 'scss.css': [ '{', '}' ],
-    \ 'scss': [ '{', '}' ],
-    \ 'javascript': [ '{', '}' ],
-    \ 'php.drupal': [ '{', '}' ],
-\}
+" let g:blockify_pairs = {
+"     \ 'javascript': [
+"     \     [ '{', '}' ],
+"     \     [ '[', ']' ],
+"     \     [ '(', ')' ],
+"     \ ],
+"     \ 'css': [
+"     \     [ '{', '}' ],
+"     \     [ '[', ']' ],
+"     \     [ '(', ')' ],
+"     \ ],
+"     \ 'scss': [
+"     \     [ '{', '}' ],
+"     \     [ '[', ']' ],
+"     \     [ '(', ')' ],
+"     \ ],
+" \}
 
 " NeoMake:  
 " `cabal install ghc-mod` Haskell
