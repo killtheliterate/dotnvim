@@ -1,10 +1,11 @@
-##  
+# dear neovim,
+
 This is how I deal with my editor setup. My nvimrc is meant to be symlinked
 from my home directory, an obvious step of which is appending a dot to the
 symlink name. Plugin management is handled by
 [NeoBundle](https://github.com/Shougo/neobundle.vim).
 
-### step one
+## step one
 
 ```
 curl https://gist.githubusercontent.com/killtheliterate/f33dbd455f86b4d093e9/raw/e68a439b1c811c9e4783de68ab6421b7b9ad0a12/install.sh | sh
@@ -17,7 +18,7 @@ pip install neovim
 curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
 ```
 
-### step plugins
+## step plugins
 
 * [Ag](https://github.com/rking/ag.vim)
 * [Airline](http://github.com/bling/vim-airline)
