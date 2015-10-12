@@ -1,73 +1,59 @@
 "" Hi, how are you?
 "" ---------------------------------------------------------------------------
 
-"" NeoBundle Scripts
+"" Packages
 "" ---------------------------------------------------------------------------
-if has('vim_starting')
-  set runtimepath+=$HOME/.nvim/bundle/neobundle.vim/
-endif
-
-call neobundle#begin(expand('$HOME/.nvim/bundle'))
-
-" BeBeBegin:
-NeoBundleFetch 'Shougo/neobundle.vim'
+call plug#begin('$HOME/.config/nvim/plugins')
 
 " PlPlPlugin:
-NeoBundle 'benekastah/neomake'
-NeoBundle 'bling/vim-airline'
-NeoBundle 'bling/vim-bufferline'
-NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'jiangmiao/auto-pairs'
-" NeoBundle 'justinmk/vim-matchparenalways'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'kien/rainbow_parentheses.vim'
-NeoBundle 'matze/vim-move'
-NeoBundle 'mhinz/vim-signify'
-NeoBundle 'mhinz/vim-startify'
-NeoBundle 'myusuf3/numbers.vim'
-NeoBundle 'reedes/vim-pencil'
-NeoBundle 'rking/ag.vim'
-NeoBundle 'sjl/vitality.vim'
-NeoBundle 'tpope/vim-commentary'
-NeoBundle 'tpope/vim-eunuch'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'tpope/vim-git'
-NeoBundle 'tpope/vim-repeat'
-NeoBundle 'tpope/vim-sensible'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'tpope/vim-unimpaired'
-NeoBundle 'tpope/vim-vinegar'
+Plug 'benekastah/neomake'
+Plug 'bling/vim-airline'
+Plug 'bling/vim-bufferline'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'jiangmiao/auto-pairs'
+" Plug 'justinmk/vim-matchparenalways'
+Plug 'kien/ctrlp.vim'
+" Plug 'JazzCore/ctrlp-cmatcher'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'matze/vim-move'
+Plug 'mhinz/vim-signify'
+Plug 'mhinz/vim-startify'
+Plug 'myusuf3/numbers.vim'
+Plug 'reedes/vim-pencil'
+Plug 'rking/ag.vim'
+Plug 'sjl/vitality.vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-git'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-vinegar'
 
 " HhHhTML: kill me plox
-NeoBundle 'Valloric/MatchTagAlways'
-NeoBundle 'gcmt/breeze.vim'
+Plug 'Valloric/MatchTagAlways', {'for': ['html', 'tpl']}
+Plug 'gcmt/breeze.vim', {'for': ['html', 'tpl']}
 
 " TtTtTheme:
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'freeo/vim-kalisi'
-NeoBundle 'w0ng/vim-hybrid'
-NeoBundle 'chriskempson/base16-vim'
+Plug 'chriskempson/base16-vim'
 
 " SySySyntax:
-NeoBundle 'cakebaker/scss-syntax.vim'
-NeoBundle 'derekwyatt/vim-scala'
-NeoBundle 'idris-hackers/idris-vim'
-" NeoBundle 'kchmck/vim-coffee-script'
-" NeoBundle 'mxw/vim-jsx'
-NeoBundle 'nono/vim-handlebars'
-NeoBundle 'othree/javascript-libraries-syntax.vim'
-NeoBundle 'othree/yajs.vim'
-NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'raichoo/haskell-vim'
-NeoBundle 'raichoo/purescript-vim'
-NeoBundle 'tpope/vim-liquid'
+Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
+" Plug 'derekwyatt/vim-scala', {'for': 'scss'}
+" Plug 'mxw/vim-jsx'
+" Plug 'nono/vim-handlebars'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'othree/yajs.vim'
+Plug 'plasticboy/vim-markdown'
+" Plug 'raichoo/haskell-vim' " neovimhaskell/haskell-vim
+" Plug 'raichoo/purescript-vim'
+Plug 'tpope/vim-liquid'
 
-call neobundle#end()
+call plug#end()
 
-filetype plugin indent on
-
-" check for updates, then onward!
-NeoBundleCheck
+" filetype plugin indent on " unnecessary with vim-plug
 
 "" The basixxx
 "" ---------------------------------------------------------------------------
@@ -126,11 +112,11 @@ set smartcase
 nmap <silent> <Space>c :nohlsearch<CR>
 
 " C: undo
-let s:vim_cache = expand('$HOME/.nvim/backups')
+let s:vim_cache = expand('$HOME/.config/nvim/backups')
 if filewritable(s:vim_cache) == 0 && exists("*mkdir")
     call mkdir(s:vim_cache, "p", 0777)
 endif
-set undodir=$HOME/.nvim/backups
+set undodir=$HOME/.config/nvim/backups
 set undofile
 
 " D: folds
@@ -237,6 +223,7 @@ let g:rbpt_colorpairs = [
 " NeoMake:  
 " `cabal install ghc-mod` Haskell
 " `npm install jshint -g` JavaScript
+" `npm install eslint -g` JavaScript
 autocmd! BufWritePost * Neomake
 let g:neomake_warning_sign = {
     \ 'text': '✗',
@@ -264,7 +251,7 @@ command! Reveal call <SID>RevealInFinder()
 noremap <leader>e :Reveal<CR>
 
 " CtrlP: be faster
-let g:ctrlp_use_caching = 0
+let g:ctrlp_use_caching = 1
 if executable('ag')
     set grepprg=ag\ --nogroup\ --nocolor
     let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
