@@ -1,22 +1,15 @@
 # dear neovim,
 
-This is how I deal with my editor setup. My nvimrc is meant to be symlinked
-from my home directory, an obvious step of which is appending a dot to the
-symlink name. Plugin management is handled by
-[NeoBundle](https://github.com/Shougo/neobundle.vim).
+My editor setup. Plugin management is handled by [vim-plug](https://github.com/junegunn/vim-plug).
 
 ## step one
 
-```
-curl https://gist.githubusercontent.com/killtheliterate/f33dbd455f86b4d093e9/raw/e68a439b1c811c9e4783de68ab6421b7b9ad0a12/install.sh | sh
-pip install neovim
+```bash
+git clone https://github.com/killtheliterate/dotnvim.git ~/.config/nvim
 ```
 
 ## step two
-
-```
-curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
-```
+Start neovim, and run `:PlugInstall`
 
 ## step plugins
 
@@ -38,7 +31,6 @@ curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.s
 * [Pencil](https://github.com/reedes/vim-pencil)
 * [Rainbow Parentheses](http://github.com/kien/rainbow_parentheses.vim)
 * [Repeat](http://github.com/tpope/vim-repeat)
-* [Reveal In Finder](https://github.com/henrik/vim-reveal-in-finder)
 * [Sensible](http://github.com/tpope/vim-sensible)
 * [Signify](http://github.com/mhinz/vim-signify)
 * [Startify](https://github.com/mhinz/vim-startify)
@@ -49,5 +41,4 @@ curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.s
 * Misc syntaxes and stuff
 
 ## Notes
-* To install the included plugins, run `:NeoBundleInstall`
-* Set Iterm2 to report itself as xterm-256color.
+* If you use Iterm2, set it to report itself as xterm-256color.
