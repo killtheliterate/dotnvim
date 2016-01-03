@@ -1,19 +1,22 @@
 "" Hi, how are you?
 "" ---------------------------------------------------------------------------
+"" ❤ ☠ ⚒ ☞ ☛ ☚ ☜ » « ☹ → ← ⚔
+"" http://xkcd.com/1172
 
 "" Packages
 "" ---------------------------------------------------------------------------
 call plug#begin('$HOME/.config/nvim/plugins')
 
 " PlPlPlugin:
+Plug 'JazzCore/ctrlp-cmatcher', {'do': './install.sh'}
 Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
 Plug 'bling/vim-bufferline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'jiangmiao/auto-pairs'
-" Plug 'justinmk/vim-matchparenalways'
+" Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
+" Plug 'junegunn/fzf.vim'
 Plug 'kien/ctrlp.vim'
-" Plug 'JazzCore/ctrlp-cmatcher'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'matze/vim-move'
 Plug 'mhinz/vim-signify'
@@ -34,22 +37,27 @@ Plug 'tpope/vim-vinegar'
 
 " HhHhTML: kill me plox
 Plug 'Valloric/MatchTagAlways', {'for': ['html', 'tpl']}
-Plug 'gcmt/breeze.vim', {'for': ['html', 'tpl']}
+Plug 'gcmt/breeze.vim',         {'for': ['html', 'tpl']}
+
+" JjJjavactipt:
+Plug 'mxw/vim-jsx',         {'for': 'jsx'}
+Plug 'othree/yajs.vim',     {'for': 'js'}
+Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
+
+" HhHhaskell: kill me plox
+Plug 'neovimhaskell/haskell-vim', {'for': 'hs'}
 
 " TtTtTheme:
 Plug 'chriskempson/base16-vim'
 
 " SySySyntax:
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
-" Plug 'derekwyatt/vim-scala', {'for': 'scss'}
-" Plug 'mxw/vim-jsx'
-" Plug 'nono/vim-handlebars'
-Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'othree/yajs.vim'
-Plug 'plasticboy/vim-markdown'
-" Plug 'raichoo/haskell-vim' " neovimhaskell/haskell-vim
-" Plug 'raichoo/purescript-vim'
-Plug 'tpope/vim-liquid'
+Plug 'derekwyatt/vim-scala',      {'for': 'scala'}
+Plug 'elm.vim',                   {'for': 'scala'}
+Plug 'nono/vim-handlebars',       {'for': 'hbs'}
+Plug 'plasticboy/vim-markdown',   {'for': ['md', 'markdown']}
+Plug 'raichoo/purescript-vim',    {'for': 'psc'}
+Plug 'tpope/vim-liquid',          {'for': ['html', 'tpl']}
 
 call plug#end()
 
@@ -160,9 +168,9 @@ hi Search cterm=NONE ctermfg=white ctermbg=5
 au BufRead, BufNewFile *.scss set filetype=scss
 
 " Haskell: http://bit.ly/1GsSOnp
-au Bufenter *.hs compiler ghc
-let g:haddock_browser = "open"
-let g:haddock_browser_callformat = "%s %s"
+" au Bufenter *.hs compiler ghc
+" let g:haddock_browser = "open"
+" let g:haddock_browser_callformat = "%s %s"
 
 " HTML: and stuff
 au BufReadPost *.tpl set syntax=html "set syntax=html
@@ -170,6 +178,11 @@ au BufNewFile,BufRead *.xml,*.tpl set filetype=html
 
 "" Plug plug plug plug
 "" ---------------------------------------------------------------------------
+
+" Tern:
+let g:tern_map_keys = 1
+let g:tern_show_argument_hints = 'on_hold'
+let g:tern_map_prefix = '<leader>'
 
 " Airline:
 let g:airline_powerline_fonts = 1
@@ -182,7 +195,17 @@ let g:startify_custom_header = map(split(system('figlet -f  rozzo "DOOM"'), '\n'
 " Markdown:
 let g:vim_markdown_frontmatter=1
 au BufNewFile,BufReadPost *.md set filetype=markdown
-let g:markdown_fenced_languages = ['css', 'erb=eruby', 'javascript', 'js=javascript', 'json=javascript', 'ruby', 'sass', 'xml', 'html']
+let g:markdown_fenced_languages = [
+    \ 'css', 
+    \ 'erb=eruby', 
+    \ 'javascript', 
+    \ 'js=javascript', 
+    \ 'json=javascript', 
+    \ 'ruby', 
+    \ 'sass', 
+    \ 'xml', 
+    \ 'html'
+\]
 
 " Rainbow:
 let g:rbpt_max = 16
@@ -200,25 +223,6 @@ let g:rbpt_colorpairs = [
     \ [ '6',  '#2aa198'],
     \ [ '4',  '#268bd2'],
 \]
-
-" MatchParenAlways:
-" let g:blockify_pairs = {
-"     \ 'javascript': [
-"     \     [ '{', '}' ],
-"     \     [ '[', ']' ],
-"     \     [ '(', ')' ],
-"     \ ],
-"     \ 'css': [
-"     \     [ '{', '}' ],
-"     \     [ '[', ']' ],
-"     \     [ '(', ')' ],
-"     \ ],
-"     \ 'scss': [
-"     \     [ '{', '}' ],
-"     \     [ '[', ']' ],
-"     \     [ '(', ')' ],
-"     \ ],
-" \}
 
 " NeoMake:  
 " `cabal install ghc-mod` Haskell
