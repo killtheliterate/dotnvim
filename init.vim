@@ -10,7 +10,7 @@ call plug#begin('$HOME/.config/nvim/plugins')
 " PlPlPlugin:
 Plug 'JazzCore/ctrlp-cmatcher', {'do': './install.sh'}
 Plug 'benekastah/neomake'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
 Plug 'bling/vim-bufferline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'jiangmiao/auto-pairs'
@@ -45,7 +45,7 @@ Plug 'othree/yajs.vim',     {'for': 'js'}
 Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
 
 " HhHhaskell: kill me plox
-Plug 'neovimhaskell/haskell-vim', {'for': 'hs'}
+Plug 'neovimhaskell/haskell-vim', {'for': ['hs', 'lhs']}
 
 " TtTtTheme:
 Plug 'chriskempson/base16-vim'
@@ -53,6 +53,7 @@ Plug 'chriskempson/base16-vim'
 " SySySyntax:
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 Plug 'derekwyatt/vim-scala',      {'for': 'scala'}
+Plug 'elixir-lang/vim-elixir'
 Plug 'elm.vim',                   {'for': 'scala'}
 Plug 'nono/vim-handlebars',       {'for': 'hbs'}
 Plug 'plasticboy/vim-markdown',   {'for': ['md', 'markdown']}
