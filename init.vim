@@ -51,6 +51,7 @@ Plug 'neovimhaskell/haskell-vim', {'for': ['hs', 'lhs']}
 Plug 'chriskempson/base16-vim'
 
 " SySySyntax:
+Plug 'LeonB/vim-nginx'
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 Plug 'derekwyatt/vim-scala',      {'for': 'scala'}
 Plug 'elixir-lang/vim-elixir'
