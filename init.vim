@@ -13,6 +13,7 @@ Plug 'benekastah/neomake'
 Plug 'vim-airline/vim-airline'
 Plug 'bling/vim-bufferline'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'floobits/floobits-neovim'
 Plug 'jiangmiao/auto-pairs'
 " Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 " Plug 'junegunn/fzf.vim'
@@ -60,6 +61,7 @@ Plug 'nono/vim-handlebars',       {'for': 'hbs'}
 Plug 'plasticboy/vim-markdown',   {'for': ['md', 'markdown']}
 Plug 'raichoo/purescript-vim',    {'for': 'psc'}
 Plug 'tpope/vim-liquid',          {'for': ['html', 'tpl']}
+Plug 'toyamarinyon/vim-swift',    {'for' : 'swift'}
 
 call plug#end()
 
@@ -81,6 +83,7 @@ if has('gui_running')
 endif
 
 " A: mad settings
+set sidescroll=1
 set autoindent
 set sessionoptions=resize,winpos,winsize,buffers,tabpages,folds,curdir,help
 set backspace=indent,eol,start
@@ -142,6 +145,9 @@ set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
 set wildignore+=*.swp,*~,._*
 
 " F: mappings
+
+" Yank without jank: http://bit.ly/1Wcj4dI
+vnoremap <expr>y "my\"" . v:register . "y`y"
 
 " preserve indentation on paste
 noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR> " preserve indent
@@ -208,6 +214,10 @@ let g:markdown_fenced_languages = [
     \ 'xml', 
     \ 'html'
 \]
+augroup Markdown
+    autocmd Filetype markdown set shiftwidth=4
+    autocmd Filetype markdown setlocal spell spelllang=en_us
+augroup END
 
 " Rainbow:
 let g:rbpt_max = 16
