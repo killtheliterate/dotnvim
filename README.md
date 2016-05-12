@@ -9,6 +9,7 @@ git clone https://github.com/killtheliterate/dotnvim.git ~/.config/nvim
 ```
 
 ## step two
+
 Start neovim, and run `:PlugInstall`
 
 ## step plugins
@@ -20,9 +21,11 @@ Start neovim, and run `:PlugInstall`
 * [Bufferline](http://github.com/bling/vim-bufferline)
 * [Commentary](http://github.com/tpope/vim-commentary)
 * [CtrlP](https://github.com/kien/ctrlp.vim)
+* [Deoplete](http://github.com/Shougo/deoplete.nvim)
 * [EditorConfig](https://github.com/editorconfig/editorconfig-vim)
 * [Eunuch](http://github.com/tpope/vim-eunuch)
 * [Fugitive](http://github.com/tpope/vim-fugitive)
+* [Floobits](http://github.com/floobits/floobits-neovim)
 * [Git](http://github.com/tpope/vim-git)
 * [MatchTagAlways](https://github.com/Valloric/MatchTagAlways)
 * [Move](http://github.com/matze/vim-move)
@@ -40,5 +43,6 @@ Start neovim, and run `:PlugInstall`
 * [Vitality](http://github.com/sjl/vitality.vim)
 * Misc syntaxes and stuff
 
-## Notes
+## step etc.
+
 * If you use Iterm2, set it to report itself as xterm-256color.

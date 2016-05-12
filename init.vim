@@ -7,16 +7,18 @@
 "" ---------------------------------------------------------------------------
 call plug#begin('$HOME/.config/nvim/plugins')
 
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+
 " PlPlPlugin:
 Plug 'JazzCore/ctrlp-cmatcher', {'do': './install.sh'}
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'benekastah/neomake'
-Plug 'vim-airline/vim-airline'
 Plug 'bling/vim-bufferline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'floobits/floobits-neovim'
 Plug 'jiangmiao/auto-pairs'
-" Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
-" Plug 'junegunn/fzf.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'matze/vim-move'
@@ -35,12 +37,17 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
+Plug 'vim-airline/vim-airline'
 
 " HhHhTML: kill me plox
 Plug 'Valloric/MatchTagAlways', {'for': ['html', 'tpl']}
 Plug 'gcmt/breeze.vim',         {'for': ['html', 'tpl']}
 
+" Elixir: okay, cool
+Plug 'slashmili/alchemist.vim'
+
 " JjJjavactipt:
+Plug 'carlitux/deoplete-ternjs'
 Plug 'mxw/vim-jsx',         {'for': 'jsx'}
 Plug 'othree/yajs.vim',     {'for': 'js'}
 Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
@@ -184,13 +191,36 @@ au BufRead, BufNewFile *.scss set filetype=scss
 au BufReadPost *.tpl set syntax=html "set syntax=html
 au BufNewFile,BufRead *.xml,*.tpl set filetype=html
 
+"" Omni omni omni omni
+"" ---------------------------------------------------------------------------
+
+augroup omnifuncs
+  autocmd!
+  autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+  autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+  autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+  autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+  autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+augroup end
+
+" tern
+if exists('g:plugs["tern_for_vim"]')
+  let g:tern_show_argument_hints = 'on_hold'
+  let g:tern_show_signature_in_pum = 1
+  autocmd FileType javascript setlocal omnifunc=tern#Complete
+endif
+
 "" Plug plug plug plug
 "" ---------------------------------------------------------------------------
 
-" Tern:
-let g:tern_map_keys = 1
-let g:tern_show_argument_hints = 'on_hold'
-let g:tern_map_prefix = '<leader>'
+" Deoplete: https://goo.gl/LvwZZY
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 1
+if !exists('g:deoplete#omni#input_patterns')
+  let g:deoplete#omni#input_patterns = {}
+endif
+" let g:deoplete#disable_auto_complete = 1
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " Airline:
 let g:airline_powerline_fonts = 1
@@ -277,6 +307,8 @@ else
     \ 'AcceptSelection("e")': ['<space>', '<cr>', '<2-LeftMouse>'],
     \ }
 endif
+
+let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
 
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\.git$\|\.yardoc\|public$|log\|tmp$',
