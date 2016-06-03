@@ -84,6 +84,8 @@ let mapleader = "\<Space>"
 
 " Theme:
 set guifont=Source\ Code\ Pro\ for\ Powerline:h13
+
+let base16colorspace='256'
 colorscheme base16-default
 set background=dark
 if has('gui_running')
