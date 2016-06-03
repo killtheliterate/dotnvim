@@ -83,15 +83,9 @@ syntax on
 let mapleader = "\<Space>"
 
 " Theme:
-set guifont=Source\ Code\ Pro\ for\ Powerline:h13
-
-let base16colorspace='256'
 colorscheme base16-default
+let base16colorspace='256'
 set background=dark
-if has('gui_running')
-  set antialias
-  set go-=T
-endif
 
 " A: mad settings
 set sidescroll=1
