@@ -43,32 +43,33 @@ Plug 'vim-airline/vim-airline'
 " HhHhTML: kill me plox
 Plug 'Valloric/MatchTagAlways', {'for': ['html', 'tpl']}
 Plug 'gcmt/breeze.vim',         {'for': ['html', 'tpl']}
+Plug 'tpope/vim-liquid',        {'for': ['html', 'tpl']}
 
 " Elixir: okay, cool
-Plug 'slashmili/alchemist.vim'
+Plug 'elixir-lang/vim-elixir',  {'for': 'elixir'}
+Plug 'slashmili/alchemist.vim', {'for': 'elixir'}
 
-" JjJjavactipt:
+" JjJjavactipt: what is javascript?
 Plug 'carlitux/deoplete-ternjs'
 Plug 'mxw/vim-jsx',         {'for': 'jsx'}
-Plug 'othree/yajs.vim',     {'for': 'js'}
+Plug 'othree/yajs.vim',     {'for': 'javascript'}
 Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
 
-" HhHhaskell: kill me plox
-Plug 'neovimhaskell/haskell-vim', {'for': ['hs', 'lhs']}
+" HhHhaskell: laws only
+Plug 'neovimhaskell/haskell-vim', {'for': 'haskell'}
+Plug 'eagletmt/neco-ghc',         {'for': 'haskell', 'do': 'stack install ghc-mod'}
 
-" TtTtTheme:
+" TtTtTheme: PRETTY PRETTY PRETTY PRETTY PRETTY PRETTY
 Plug 'chriskempson/base16-vim'
 
-" SySySyntax:
+" TtTtTheRest:
 Plug 'LeonB/vim-nginx'
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 Plug 'derekwyatt/vim-scala',      {'for': 'scala'}
-Plug 'elixir-lang/vim-elixir'
 Plug 'elm.vim',                   {'for': 'scala'}
 Plug 'nono/vim-handlebars',       {'for': 'hbs'}
 Plug 'plasticboy/vim-markdown',   {'for': ['md', 'markdown']}
 Plug 'raichoo/purescript-vim',    {'for': 'psc'}
-Plug 'tpope/vim-liquid',          {'for': ['html', 'tpl']}
 Plug 'toyamarinyon/vim-swift',    {'for' : 'swift'}
 
 call plug#end()
@@ -268,9 +269,6 @@ let g:rbpt_colorpairs = [
 \]
 
 " NeoMake:  
-" `cabal install ghc-mod` Haskell
-" `npm install jshint -g` JavaScript
-" `npm install eslint -g` JavaScript
 autocmd! BufWritePost * Neomake
 let g:neomake_warning_sign = {
     \ 'text': '✗',
