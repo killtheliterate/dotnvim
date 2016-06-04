@@ -1,0 +1,34 @@
+#! /bin/sh
+
+# Need to either have this in your path, or make an alias for it in, like,
+# zshrc. Also requires https://github.com/chriskempson/base16-shell.
+
+function help () {
+    echo "base16color-switch - Swap between the lightside and starwars. Star-wars. StarWars?"
+    echo ""
+    echo "    base16color-switch light - the lightness";
+    echo "    base16color-switch dark  - the darkness";
+}
+
+if [ $1 ] 
+then
+  case "$1" in
+  light)
+    BASE16_SHELL="$HOME/.config/base16-shell/base16-default.light.sh"
+    [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+    export BASE16_MODE=light
+  ;;
+  dark)
+    BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
+    [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+    export BASE16_MODE=dark
+  ;;
+  *)
+    help;
+  ;;
+  esac
+else
+  help;
+fi
