@@ -18,12 +18,20 @@ then
     [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
     export BASE16_MODE=light
+
+    if [ -n "$TMUX" ]; then
+      tmux set-environment -t: BASE16_MODE light
+    fi
   ;;
   dark)
     BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
     [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
     export BASE16_MODE=dark
+
+    if [ -n "$TMUX" ]; then
+      tmux set-environment -t: BASE16_MODE dark
+    fi
   ;;
   *)
     help;

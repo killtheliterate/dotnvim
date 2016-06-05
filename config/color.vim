@@ -20,8 +20,17 @@ let base16colorspace='256'
 " an iTerm2 profile, and avoid base16-shell entirely. I was using it due to
 " some color glitchy thing on Ubuntu.
 
-if ($BASE16_MODE == "light")
-  set background=light
-else
-  set background=dark
-endif
+let &background=$BASE16_MODE
+
+" function UpdateColors(arg)
+"   if ($BASE16_MODE == "light")
+"     execute ":set background=light"
+"   else
+"     execute ":set background=dark"
+"   endif
+" endfunction
+
+" if has('timers')
+"   let timer = timer_start(0, 'UpdateColors', {'repeat': -1})
+" else
+" endif
