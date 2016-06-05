@@ -14,12 +14,12 @@ source $HOME/.config/nvim/config/general.vim
 "" plugin configuration
 "" ---------------------------------------------------------------------------
 
-source $HOME/.config/nvim/config/plugins/airline.vim
-source $HOME/.config/nvim/config/plugins/completion.vim
-source $HOME/.config/nvim/config/plugins/ctrlp.vim
-source $HOME/.config/nvim/config/plugins/deoplete.vim
-source $HOME/.config/nvim/config/plugins/markdown.vim
-source $HOME/.config/nvim/config/plugins/neomake.vim
-source $HOME/.config/nvim/config/plugins/rainbow_parentheses.vim
-source $HOME/.config/nvim/config/plugins/reveal_in_finder.vim
-source $HOME/.config/nvim/config/plugins/startify.vim
+source $HOME/.config/nvim/config/plugin-config/airline.vim
+source $HOME/.config/nvim/config/plugin-config/completion.vim
+source $HOME/.config/nvim/config/plugin-config/ctrlp.vim
+source $HOME/.config/nvim/config/plugin-config/deoplete.vim
+source $HOME/.config/nvim/config/plugin-config/markdown.vim
+source $HOME/.config/nvim/config/plugin-config/neomake.vim
+source $HOME/.config/nvim/config/plugin-config/rainbow_parentheses.vim
+source $HOME/.config/nvim/config/plugin-config/reveal_in_finder.vim
+source $HOME/.config/nvim/config/plugin-config/startify.vim

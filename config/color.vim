@@ -14,7 +14,7 @@
 colorscheme base16-default
 
 " uncomment this is you're using base16-shell
-" let base16colorspace='256'
+let base16colorspace='256'
 "
 " if you're using iTerm2, it may be easier to just set this shell variable with
 " an iTerm2 profile, and avoid base16-shell entirely. I was using it due to
