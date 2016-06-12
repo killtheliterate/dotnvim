@@ -24,8 +24,8 @@ Start neovim, and run `:PlugInstall`
 * [Deoplete](http://github.com/Shougo/deoplete.nvim)
 * [EditorConfig](https://github.com/editorconfig/editorconfig-vim)
 * [Eunuch](http://github.com/tpope/vim-eunuch)
-* [Fugitive](http://github.com/tpope/vim-fugitive)
 * [Floobits](http://github.com/floobits/floobits-neovim)
+* [Fugitive](http://github.com/tpope/vim-fugitive)
 * [Git](http://github.com/tpope/vim-git)
 * [MatchTagAlways](https://github.com/Valloric/MatchTagAlways)
 * [Move](http://github.com/matze/vim-move)
@@ -39,9 +39,14 @@ Start neovim, and run `:PlugInstall`
 * [Startify](https://github.com/mhinz/vim-startify)
 * [Surround](http://github.com/tpope/vim-surround)
 * [Unimpaired](http://github.com/tpope/vim-unimpaired)
+* [Vim Org-Mode](https://github.com/jceb/vim-orgmode)
 * [Vinegar](http://github.com/tpope/vim-vinegar)
 * [Vitality](http://github.com/sjl/vitality.vim)
-* Misc syntaxes and stuff
+* Stuff for Elixir
+* Stuff for HTML
+* Stuff for Haskell
+* Stuff for JavaScript
+* Some other stuff
 
 ## step etc.
 
