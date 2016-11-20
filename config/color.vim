@@ -11,7 +11,7 @@
 "" 
 "" TODO: this is currently shitty
 
-colorscheme base16-default
+colorscheme base16-default-dark
 
 " uncomment this is you're using base16-shell
 let base16colorspace='256'

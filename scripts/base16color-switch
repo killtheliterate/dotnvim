@@ -14,7 +14,7 @@ if [ $1 ]
 then
   case "$1" in
   light)
-    BASE16_SHELL="$HOME/.config/base16-shell/base16-default.light.sh"
+    BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-default-light.sh"
     [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
     export BASE16_MODE=light
@@ -24,7 +24,7 @@ then
     fi
   ;;
   dark)
-    BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
+    BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-default-dark.sh"
     [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
     export BASE16_MODE=dark

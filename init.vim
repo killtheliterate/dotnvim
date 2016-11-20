@@ -18,6 +18,7 @@ source $HOME/.config/nvim/config/plugin-config/airline.vim
 source $HOME/.config/nvim/config/plugin-config/completion.vim
 source $HOME/.config/nvim/config/plugin-config/ctrlp.vim
 source $HOME/.config/nvim/config/plugin-config/deoplete.vim
+source $HOME/.config/nvim/config/plugin-config/lightline.vim
 source $HOME/.config/nvim/config/plugin-config/markdown.vim
 source $HOME/.config/nvim/config/plugin-config/neomake.vim
 source $HOME/.config/nvim/config/plugin-config/rainbow_parentheses.vim
