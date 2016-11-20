@@ -2,6 +2,7 @@
 "" ---------------------------------------------------------------------------
 
 autocmd! BufWritePost * Neomake
+
 let g:neomake_warning_sign = {
     \ 'text': '✗',
     \ 'texthl': 'ErrorMsg',

@@ -15,6 +15,7 @@ Plug 'benekastah/neomake'
 Plug 'bling/vim-bufferline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'floobits/floobits-neovim'
+Plug 'jaxbot/semantic-highlight.vim'
 Plug 'jceb/vim-orgmode'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kien/ctrlp.vim'
@@ -32,12 +33,12 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 
 " HhHhTML: kill me plox
 Plug 'Valloric/MatchTagAlways', {'for': ['html', 'tpl']}
@@ -50,7 +51,7 @@ Plug 'slashmili/alchemist.vim', {'for': 'elixir'}
 
 " JjJjavactipt: what is javascript?
 Plug 'carlitux/deoplete-ternjs'
-Plug 'mxw/vim-jsx',         {'for': 'jsx'}
+Plug 'mxw/vim-jsx',         {'for': ['jsx', 'js']}
 Plug 'othree/yajs.vim',     {'for': 'javascript'}
 Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
 
@@ -58,17 +59,20 @@ Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
 Plug 'neovimhaskell/haskell-vim', {'for': 'haskell'}
 Plug 'eagletmt/neco-ghc',         {'for': 'haskell', 'do': 'stack install ghc-mod'}
 
-" TtTtTheme: PRETTY PRETTY PRETTY PRETTY PRETTY PRETTY
-Plug 'chriskempson/base16-vim'
+" ScScScala: It's like JavaScript, but still bad
+Plug 'ensime/ensime-vim',         {'for': 'scala'}
+Plug 'derekwyatt/vim-scala',      {'for': 'scala'}
 
 " TtTtTheRest:
 Plug 'LeonB/vim-nginx'
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
-Plug 'derekwyatt/vim-scala',      {'for': 'scala'}
-Plug 'elm.vim',                   {'for': 'scala'}
+Plug 'elm.vim',                   {'for': '.elm'}
 Plug 'nono/vim-handlebars',       {'for': 'hbs'}
 Plug 'plasticboy/vim-markdown',   {'for': ['md', 'markdown']}
 Plug 'raichoo/purescript-vim',    {'for': 'psc'}
 Plug 'toyamarinyon/vim-swift',    {'for' : 'swift'}
+
+" TtTtTheme: PRETTY PRETTY PRETTY PRETTY PRETTY PRETTY
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
