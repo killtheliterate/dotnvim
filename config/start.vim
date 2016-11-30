@@ -15,14 +15,15 @@ Plug 'benekastah/neomake'
 Plug 'bling/vim-bufferline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'floobits/floobits-neovim'
+Plug 'itchyny/lightline.vim'
 Plug 'jaxbot/semantic-highlight.vim'
 Plug 'jceb/vim-orgmode'
+" Plug 'jeetsukumaran/vim-filebeagle'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kien/ctrlp.vim'
-Plug 'kien/rainbow_parentheses.vim'
 Plug 'matze/vim-move'
 Plug 'mhinz/vim-signify'
-Plug 'mhinz/vim-startify'
+" Plug 'mhinz/vim-startify'
 Plug 'myusuf3/numbers.vim'
 Plug 'powerman/vim-plugin-AnsiEsc'
 Plug 'reedes/vim-pencil'
@@ -35,10 +36,7 @@ Plug 'tpope/vim-git'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-vinegar'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
-Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-vinegar' " @see http://bit.ly/2gyTOwp
 
 " HhHhTML: kill me plox
 Plug 'Valloric/MatchTagAlways', {'for': ['html', 'tpl']}
@@ -50,10 +48,10 @@ Plug 'elixir-lang/vim-elixir',  {'for': 'elixir'}
 Plug 'slashmili/alchemist.vim', {'for': 'elixir'}
 
 " JjJjavactipt: what is javascript?
-Plug 'carlitux/deoplete-ternjs'
-Plug 'mxw/vim-jsx',         {'for': ['jsx', 'js']}
-Plug 'othree/yajs.vim',     {'for': 'javascript'}
-Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
+Plug 'carlitux/deoplete-ternjs', {'for': ['javascript', 'javascript.jsx']}
+Plug 'mxw/vim-jsx',              {'for': ['javascript', 'javascript.jsx']}
+Plug 'pangloss/vim-javascript',  {'for': ['javascript', 'javascript.jsx']}
+Plug 'ternjs/tern_for_vim',      {'do': 'npm install'}
 
 " HhHhaskell: laws only
 Plug 'neovimhaskell/haskell-vim', {'for': 'haskell'}
@@ -63,16 +61,16 @@ Plug 'eagletmt/neco-ghc',         {'for': 'haskell', 'do': 'stack install ghc-mo
 Plug 'ensime/ensime-vim',         {'for': 'scala'}
 Plug 'derekwyatt/vim-scala',      {'for': 'scala'}
 
-" TtTtTheRest:
+" OtOtOther
 Plug 'LeonB/vim-nginx'
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 Plug 'elm.vim',                   {'for': '.elm'}
 Plug 'nono/vim-handlebars',       {'for': 'hbs'}
-Plug 'plasticboy/vim-markdown',   {'for': ['md', 'markdown']}
+Plug 'plasticboy/vim-markdown',   {'for': 'markdown'}
 Plug 'raichoo/purescript-vim',    {'for': 'psc'}
-Plug 'toyamarinyon/vim-swift',    {'for' : 'swift'}
+Plug 'toyamarinyon/vim-swift',    {'for': 'swift'}
 
 " TtTtTheme: PRETTY PRETTY PRETTY PRETTY PRETTY PRETTY
-Plug 'chriskempson/base16-vim'
+Plug 'morhetz/gruvbox'
 
 call plug#end()

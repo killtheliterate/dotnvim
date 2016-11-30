@@ -106,6 +106,4 @@ au BufNewFile,BufRead *.xml,*.tpl set filetype=html
 autocmd BufWritePost *.scala silent :EnTypeCheck
 nnoremap <localleader>t :EnTypeCheck<CR>
 
-if exists('&inccommand')
-  set inccommand=split
-endif
+set inccommand=nosplit

@@ -24,6 +24,7 @@ Start neovim, and run `:PlugInstall`
 * [Deoplete](http://github.com/Shougo/deoplete.nvim)
 * [EditorConfig](https://github.com/editorconfig/editorconfig-vim)
 * [Eunuch](http://github.com/tpope/vim-eunuch)
+* [Filebeagle](http://jeetsukumaran/vim-filebeagle)
 * [Floobits](http://github.com/floobits/floobits-neovim)
 * [Fugitive](http://github.com/tpope/vim-fugitive)
 * [Git](http://github.com/tpope/vim-git)
@@ -32,7 +33,6 @@ Start neovim, and run `:PlugInstall`
 * [NeoMake](https://github.com/benekastah/neomake)
 * [Numbers](http://github.com/myusuf3/numbers.vim)
 * [Pencil](https://github.com/reedes/vim-pencil)
-* [Rainbow Parentheses](http://github.com/kien/rainbow_parentheses.vim)
 * [Repeat](http://github.com/tpope/vim-repeat)
 * [Sensible](http://github.com/tpope/vim-sensible)
 * [Signify](http://github.com/mhinz/vim-signify)
@@ -40,14 +40,9 @@ Start neovim, and run `:PlugInstall`
 * [Surround](http://github.com/tpope/vim-surround)
 * [Unimpaired](http://github.com/tpope/vim-unimpaired)
 * [Vim Org-Mode](https://github.com/jceb/vim-orgmode)
-* [Vinegar](http://github.com/tpope/vim-vinegar)
 * [Vitality](http://github.com/sjl/vitality.vim)
 * Stuff for Elixir
 * Stuff for HTML
 * Stuff for Haskell
 * Stuff for JavaScript
 * Some other stuff
-
-## step etc.
-
-* If you use Iterm2, set it to report itself as xterm-256color.

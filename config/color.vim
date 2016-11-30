@@ -11,16 +11,24 @@
 "" 
 "" TODO: this is currently shitty
 
-colorscheme base16-default-dark
+set termguicolors
+
+" https://medium.com/@ericclifford/neovim-item2-truecolor-awesome-70b975516849#.hiis8kohp
+" colorscheme base16-default-dark
+colorscheme gruvbox
+set background=dark
+
+" https://github.com/tmux/tmux/issues/435#issuecomment-226849415
+
 
 " uncomment this is you're using base16-shell
-let base16colorspace='256'
+" let base16colorspace='256'
 "
 " if you're using iTerm2, it may be easier to just set this shell variable with
 " an iTerm2 profile, and avoid base16-shell entirely. I was using it due to
 " some color glitchy thing on Ubuntu.
 
-let &background=$BASE16_MODE
+" let &background=$BASE16_MODE
 
 " function UpdateColors(arg)
 "   if ($BASE16_MODE == "light")
