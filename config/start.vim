@@ -29,7 +29,8 @@ Plug 'powerman/vim-plugin-AnsiEsc'
 Plug 'reedes/vim-pencil'
 Plug 'rking/ag.vim'
 Plug 'sjl/vitality.vim'
-Plug 'tpope/vim-commentary'
+Plug 'tomtom/tcomment_vim'
+" Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
@@ -50,7 +51,8 @@ Plug 'slashmili/alchemist.vim', {'for': 'elixir'}
 " JjJjavactipt: what is javascript?
 Plug 'carlitux/deoplete-ternjs', {'for': ['javascript', 'javascript.jsx']}
 Plug 'mxw/vim-jsx',              {'for': ['javascript', 'javascript.jsx']}
-Plug 'pangloss/vim-javascript',  {'for': ['javascript', 'javascript.jsx']}
+" Plug 'pangloss/vim-javascript',  {'for': ['javascript', 'javascript.jsx']}
+Plug 'othree/yajs.vim',          {'for': ['javascript', 'javascript.jsx']}
 Plug 'ternjs/tern_for_vim',      {'do': 'npm install'}
 
 " HhHhaskell: laws only
