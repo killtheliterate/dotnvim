@@ -17,7 +17,6 @@ source $HOME/.config/nvim/config/general.vim
 
 source $HOME/.config/nvim/config/plugin-config/completion.vim
 source $HOME/.config/nvim/config/plugin-config/ctrlp.vim
-source $HOME/.config/nvim/config/plugin-config/deoplete.vim
 source $HOME/.config/nvim/config/plugin-config/lightline.vim
 source $HOME/.config/nvim/config/plugin-config/markdown.vim
 source $HOME/.config/nvim/config/plugin-config/neomake.vim
