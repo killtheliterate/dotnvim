@@ -10,7 +10,7 @@ endfunction
 
 " PlPlPlugin:
 Plug 'JazzCore/ctrlp-cmatcher', {'do': './install.sh'}
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+" Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'benekastah/neomake'
 Plug 'bling/vim-bufferline'
 Plug 'editorconfig/editorconfig-vim'
@@ -21,7 +21,7 @@ Plug 'janko-m/vim-test'
 Plug 'jceb/vim-orgmode'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kien/ctrlp.vim'
-Plug 'machakann/vim-highlightedyank'
+" Plug 'machakann/vim-highlightedyank'
 Plug 'matze/vim-move'
 Plug 'mhinz/vim-signify'
 Plug 'myusuf3/numbers.vim'
@@ -50,7 +50,7 @@ Plug 'slashmili/alchemist.vim', {'for': 'elixir'}
 Plug 'mxw/vim-jsx',              {'for': ['javascript', 'javascript.jsx']}
 Plug 'pangloss/vim-javascript',  {'for': ['javascript', 'javascript.jsx']}
 " Plug 'othree/jspc.vim',          {'for': ['javascript', 'javascript.jsx']}
-Plug 'ternjs/tern_for_vim',      {'for': ['javascript', 'javascript.jsx'], 'do': 'npm install && npm install -g tern'}
+" Plug 'ternjs/tern_for_vim',      {'for': ['javascript', 'javascript.jsx'], 'do': 'npm install && npm install -g tern'}
 
 " HhHhaskell: laws only
 Plug 'eagletmt/neco-ghc',         {'for': ['haskell', 'cabal'], 'do': 'stack install ghc-mod'}

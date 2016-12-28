@@ -37,7 +37,8 @@ set tabstop=2
 set textwidth=78
 set timeoutlen=1000
 set ttimeoutlen=10
-set clipboard+=unnamedplus
+" set clipboard+=unnamedplus
+set clipboard=unnamed " @see: http://bit.ly/2ie2GeK
 set hidden
 
 " B: search
@@ -83,10 +84,10 @@ nnoremap j gj
 nnoremap k gk
 
 "" bubble lines
-nmap <C-k> [e
-nmap <C-j> ]e
-vmap <C-k> [egv
-vmap <C-j> ]egv
+" nmap <C-k> [e
+" nmap <C-j> ]e
+" vmap <C-k> [egv
+" vmap <C-j> ]egv
 
 " leader leader to switch between last 2 buffers
 nnoremap <leader><leader> <c-^>
