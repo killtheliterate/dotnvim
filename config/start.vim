@@ -13,6 +13,7 @@ Plug 'JazzCore/ctrlp-cmatcher', {'do': './install.sh'}
 " Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'benekastah/neomake'
 Plug 'bling/vim-bufferline'
+Plug 'brooth/far.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'floobits/floobits-neovim'
@@ -51,6 +52,8 @@ Plug 'mxw/vim-jsx',              {'for': ['javascript', 'javascript.jsx']}
 Plug 'pangloss/vim-javascript',  {'for': ['javascript', 'javascript.jsx']}
 " Plug 'othree/jspc.vim',          {'for': ['javascript', 'javascript.jsx']}
 " Plug 'ternjs/tern_for_vim',      {'for': ['javascript', 'javascript.jsx'], 'do': 'npm install && npm install -g tern'}
+" Plug 'neovim/node-host',         {'for': ['javascript', 'javascript.jsx'], 'do': 'npm install'}
+" Plug 'billyvg/tigris.nvim',      {'for': ['javascript', 'javascript.jsx'], 'do': './install.sh'}
 
 " HhHhaskell: laws only
 Plug 'eagletmt/neco-ghc',         {'for': ['haskell', 'cabal'], 'do': 'stack install ghc-mod'}

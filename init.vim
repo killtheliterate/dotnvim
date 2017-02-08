@@ -23,6 +23,7 @@ source $HOME/.config/nvim/config/plugin-config/neomake.vim
 source $HOME/.config/nvim/config/plugin-config/omnifunctions.vim
 source $HOME/.config/nvim/config/plugin-config/reveal_in_finder.vim
 source $HOME/.config/nvim/config/plugin-config/startify.vim
+source $HOME/.config/nvim/config/plugin-config/tigris.vim
 source $HOME/.config/nvim/config/plugin-config/vim-jsx.vim
 
 let g:move_key_modifier = 'C'
