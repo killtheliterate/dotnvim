@@ -10,7 +10,7 @@ endfunction
 
 " PlPlPlugin:
 Plug 'JazzCore/ctrlp-cmatcher', {'do': './install.sh'}
-" Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'benekastah/neomake'
 Plug 'bling/vim-bufferline'
 Plug 'brooth/far.vim'
@@ -47,7 +47,7 @@ Plug 'elixir-lang/vim-elixir',  {'for': 'elixir'}
 Plug 'slashmili/alchemist.vim', {'for': 'elixir'}
 
 " JjJjavactipt: what is javascript?
-" Plug 'carlitux/deoplete-ternjs', {'for': ['javascript', 'javascript.jsx'], 'do': 'npm install -g tern'}
+Plug 'carlitux/deoplete-ternjs', {'for': ['javascript', 'javascript.jsx'], 'do': 'npm install -g tern'}
 Plug 'mxw/vim-jsx',              {'for': ['javascript', 'javascript.jsx']}
 Plug 'pangloss/vim-javascript',  {'for': ['javascript', 'javascript.jsx']}
 " Plug 'othree/jspc.vim',          {'for': ['javascript', 'javascript.jsx']}
@@ -76,5 +76,6 @@ Plug 'toyamarinyon/vim-swift',    {'for': 'swift'}
 
 " TtTtTheme: PRETTY PRETTY PRETTY PRETTY PRETTY PRETTY
 Plug 'morhetz/gruvbox'
+" Plug 'chriskempson/base16-vim', {'do': 'git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell'}
 
 call plug#end()
