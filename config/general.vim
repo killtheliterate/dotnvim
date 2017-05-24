@@ -5,6 +5,8 @@
 syntax on
 let mapleader = "\<Space>"
 
+" set encoding=utf8
+
 " Theme:
 " A: mad settings
 set sidescroll=1
@@ -83,7 +85,7 @@ nnoremap <leader>rtw :%s/\s\+$//e<CR>
 nnoremap j gj
 nnoremap k gk
 
-"" bubble lines
+"" bubble lines: replaced by matze/vim-move
 " nmap <C-k> [e
 " nmap <C-j> ]e
 " vmap <C-k> [egv

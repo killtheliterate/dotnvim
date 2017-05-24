@@ -9,24 +9,23 @@ function! DoRemote(arg)
 endfunction
 
 " PlPlPlugin:
-Plug 'JazzCore/ctrlp-cmatcher', {'do': './install.sh'}
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-Plug 'benekastah/neomake'
+Plug 'JazzCore/ctrlp-cmatcher', { 'do': './install.sh' }
+Plug 'Shougo/deoplete.nvim',    { 'do': function('DoRemote') }
+Plug 'benekastah/neomake',      { 'do': 'npm install -g standard'}
 Plug 'bling/vim-bufferline'
 Plug 'brooth/far.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
-Plug 'floobits/floobits-neovim'
 Plug 'itchyny/lightline.vim'
 Plug 'janko-m/vim-test'
 Plug 'jceb/vim-orgmode'
+Plug 'sjl/vitality.vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'kien/ctrlp.vim'
-" Plug 'machakann/vim-highlightedyank'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'machakann/vim-highlightedyank'
 Plug 'matze/vim-move'
 Plug 'mhinz/vim-signify'
 Plug 'myusuf3/numbers.vim'
-Plug 'powerman/vim-plugin-AnsiEsc'
 Plug 'reedes/vim-pencil'
 Plug 'rking/ag.vim'
 Plug 'tomtom/tcomment_vim'
@@ -50,10 +49,6 @@ Plug 'slashmili/alchemist.vim', {'for': 'elixir'}
 Plug 'carlitux/deoplete-ternjs', {'for': ['javascript', 'javascript.jsx'], 'do': 'npm install -g tern'}
 Plug 'mxw/vim-jsx',              {'for': ['javascript', 'javascript.jsx']}
 Plug 'pangloss/vim-javascript',  {'for': ['javascript', 'javascript.jsx']}
-" Plug 'othree/jspc.vim',          {'for': ['javascript', 'javascript.jsx']}
-" Plug 'ternjs/tern_for_vim',      {'for': ['javascript', 'javascript.jsx'], 'do': 'npm install && npm install -g tern'}
-" Plug 'neovim/node-host',         {'for': ['javascript', 'javascript.jsx'], 'do': 'npm install'}
-" Plug 'billyvg/tigris.nvim',      {'for': ['javascript', 'javascript.jsx'], 'do': './install.sh'}
 
 " HhHhaskell: laws only
 Plug 'eagletmt/neco-ghc',         {'for': ['haskell', 'cabal'], 'do': 'stack install ghc-mod'}
@@ -64,18 +59,25 @@ Plug 'parsonsmatt/intero-neovim', {'for': ['haskell', 'cabal']}
 Plug 'ensime/ensime-vim',         {'for': 'scala'}
 Plug 'derekwyatt/vim-scala',      {'for': 'scala'}
 
+" PuPuPurescript
+Plug 'raichoo/purescript-vim', {'for': 'purescript'}
+Plug 'FrigoEU/psc-ide-vim/',   {'for': 'purescript'}
+
 " OtOtOther
 Plug 'LeonB/vim-nginx',           {'for': 'nginx'}
 Plug 'Shougo/neco-vim',           {'for': 'vim'}
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
-Plug 'elm.vim',                   {'for': '.elm'}
 Plug 'nono/vim-handlebars',       {'for': 'hbs'}
 Plug 'plasticboy/vim-markdown',   {'for': 'markdown'}
-Plug 'raichoo/purescript-vim',    {'for': 'psc'}
 Plug 'toyamarinyon/vim-swift',    {'for': 'swift'}
+
+" OtOtOtherOtOtOther
+Plug 'powerman/vim-plugin-AnsiEsc'
 
 " TtTtTheme: PRETTY PRETTY PRETTY PRETTY PRETTY PRETTY
 Plug 'morhetz/gruvbox'
-" Plug 'chriskempson/base16-vim', {'do': 'git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell'}
+
+" Lolkay: Some fance-shmance
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
