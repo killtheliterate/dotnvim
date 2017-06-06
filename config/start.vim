@@ -9,25 +9,26 @@ function! DoRemote(arg)
 endfunction
 
 " PlPlPlugin:
-Plug 'JazzCore/ctrlp-cmatcher', { 'do': './install.sh' }
-Plug 'Shougo/deoplete.nvim',    { 'do': function('DoRemote') }
-Plug 'benekastah/neomake',      { 'do': 'npm install -g standard'}
+" Plug 'benekastah/neomake',      { 'do': 'npm install -g standard'}
 Plug 'bling/vim-bufferline'
 Plug 'brooth/far.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'itchyny/lightline.vim'
 Plug 'janko-m/vim-test'
+" Plug 'JazzCore/ctrlp-cmatcher', { 'do': './install.sh' }
 Plug 'jceb/vim-orgmode'
-Plug 'sjl/vitality.vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'matze/vim-move'
 Plug 'mhinz/vim-signify'
+Plug 'mklabs/vim-json'
 Plug 'myusuf3/numbers.vim'
 Plug 'reedes/vim-pencil'
 Plug 'rking/ag.vim'
+Plug 'Shougo/deoplete.nvim',    { 'do': function('DoRemote') }
+Plug 'sjl/vitality.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
@@ -35,6 +36,9 @@ Plug 'tpope/vim-git'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vinegar' " @see http://bit.ly/2gyTOwp
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'w0rp/ale',                { 'do': 'npm install -g standard'}
 
 " HhHhTML: kill me plox
 Plug 'Valloric/MatchTagAlways', {'for': ['html', 'tpl']}

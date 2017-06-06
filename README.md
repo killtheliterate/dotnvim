@@ -15,6 +15,7 @@ Start neovim, and run `:PlugInstall`
 ## step plugins
 
 * [Ag](http://github.com/rking/ag.vim)
+* [Ale](https://github.com/w0rp/ale)
 * [Auto Pairs](http://github.com/jiangmiao/auto-pairs)
 * [Breeze](http://github.com/gcmt/breeze.vim)
 * [Bufferline](http://github.com/bling/vim-bufferline)
@@ -29,7 +30,6 @@ Start neovim, and run `:PlugInstall`
 * [Lightline](http://github.com/itchyny/lightline.vim)
 * [MatchTagAlways](http://github.com/Valloric/MatchTagAlways)
 * [Move](http://github.com/matze/vim-move)
-* [NeoMake](http://github.com/benekastah/neomake)
 * [Numbers](http://github.com/myusuf3/numbers.vim)
 * [Pencil](http://github.com/reedes/vim-pencil)
 * [Repeat](http://github.com/tpope/vim-repeat)
@@ -51,4 +51,4 @@ Start neovim, and run `:PlugInstall`
 
 ## step yep
 
-`:Plug` & `:PlugClean` & `:PlugUpdate`
+`:Plug` & `:PlugClean` & `:PlugUpdate` & `:UpdateRemotePlugins`
