@@ -4,12 +4,24 @@
 "" 
 "" TODO: this is currently shitty
 
-"" Gruv:
-let g:gruvbox_italic=1
 set termguicolors
-colorscheme gruvbox
-set background=dark
+
+func! GetBase16(id)
+  if filereadable(expand("~/.vimrc_background"))
+    let base16colorspace=256
+    source ~/.vimrc_background
+  endif
+endf
+
+"" Gruv:
+" ----------------------------------------------------------------------------
+
+" let g:gruvbox_italic=1
+" colorscheme gruvbox
+" set background=dark
 
 "" base16:
-" let base16colorspace=256  " Access colors present in 256 colorspace
-" colorscheme base16-default-dark
+" ----------------------------------------------------------------------------
+
+call GetBase16('init')
+call timer_start(500, 'GetBase16', {'repeat':-1})
