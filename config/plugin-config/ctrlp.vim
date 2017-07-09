@@ -3,6 +3,7 @@
 "" Be faster
 
 let g:ctrlp_use_caching = 1
+
 if executable('ag')
     set grepprg=ag\ --nogroup\ --nocolor
     let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
@@ -13,7 +14,7 @@ else
     \ }
 endif
 
-let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
+" let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
 
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\.git$\|\.yardoc\|public$|log\|tmp$',

@@ -1,3 +1,4 @@
+" \ 'colorscheme': 'base16',
 let g:lightline = {
       \ 'mode_map': { 'c': 'NORMAL' },
       \ 'active': {

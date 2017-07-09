@@ -85,6 +85,8 @@ nnoremap <leader>rtw :%s/\s\+$//e<CR>
 nnoremap j gj
 nnoremap k gk
 
+" TODO: add mapping so window switching works better with tmux
+
 "" bubble lines: replaced by matze/vim-move
 " nmap <C-k> [e
 " nmap <C-j> ]e
@@ -93,10 +95,6 @@ nnoremap k gk
 
 " leader leader to switch between last 2 buffers
 nnoremap <leader><leader> <c-^>
-
-" G: hilite
-hi MatchParen cterm=bold ctermbg=darkmagenta ctermfg=white
-hi Search cterm=NONE ctermfg=white ctermbg=5
 
 " Sass: stop sucking, sass
 au BufRead, BufNewFile *.scss set filetype=scss
@@ -109,4 +107,5 @@ au BufNewFile,BufRead *.xml,*.tpl set filetype=html
 autocmd BufWritePost *.scala silent :EnTypeCheck
 nnoremap <localleader>t :EnTypeCheck<CR>
 
+" Ooh, cool
 set inccommand=nosplit
