@@ -12,6 +12,12 @@ git clone http://github.com/killtheliterate/dotnvim.git ~/.config/nvim
 
 Start neovim, and run `:PlugInstall`
 
+## step colors
+
+Uses [base16-shell](https://github.com/chriskempson/base16-shell). Check out
+the base16-shell repo to add the appropriate stuff to your 
+`.bashrc/.zshrc/.whateverrc`
+
 ## step plugins
 
 * [Ag](http://github.com/rking/ag.vim)
