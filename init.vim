@@ -15,6 +15,7 @@ source $HOME/.config/nvim/config/general.vim
 "" plugin configuration
 "" ---------------------------------------------------------------------------
 
+source $HOME/.config/nvim/config/plugin-config/ack.vim
 " source $HOME/.config/nvim/config/plugin-config/airline.vim
 source $HOME/.config/nvim/config/plugin-config/ale.vim
 source $HOME/.config/nvim/config/plugin-config/ctrlp.vim
@@ -27,7 +28,7 @@ source $HOME/.config/nvim/config/plugin-config/ncm.vim
 " source $HOME/.config/nvim/config/plugin-config/rainbow.vim
 " source $HOME/.config/nvim/config/plugin-config/rainbow_parentheses.vim
 source $HOME/.config/nvim/config/plugin-config/reveal_in_finder.vim
-source $HOME/.config/nvim/config/plugin-config/startify.vim
+" source $HOME/.config/nvim/config/plugin-config/startify.vim
 " source $HOME/.config/nvim/config/plugin-config/tigris.vim
 source $HOME/.config/nvim/config/plugin-config/ultisnips.vim
 source $HOME/.config/nvim/config/plugin-config/vim-jsx.vim

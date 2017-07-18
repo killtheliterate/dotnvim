@@ -14,9 +14,9 @@ endif
 
 call plug#begin('$HOME/.config/nvim/.plugged')
 
-function! DoRemote(arg)
-    UpdateRemotePlugins
-endfunction
+" function! DoRemote(arg)
+"     UpdateRemotePlugins
+" endfunction
 
 " PlPlPlugin:
 " Plug 'autozimu/LanguageClient-neovim', {'do': ':UpdateRemotePlugins'}
@@ -33,14 +33,16 @@ Plug 'janko-m/vim-test'
 Plug 'jceb/vim-orgmode'
 Plug 'jiangmiao/auto-pairs'
 " Plug 'kien/rainbow_parentheses.vim'
-Plug 'luochen1990/rainbow'
+" Plug 'luochen1990/rainbow'
 Plug 'machakann/vim-highlightedyank'
 Plug 'matze/vim-move'
 Plug 'mhinz/vim-signify'
+Plug 'mhinz/vim-startify'
+Plug 'mileszs/ack.vim'
 Plug 'mklabs/vim-json'
 Plug 'myusuf3/numbers.vim'
 Plug 'reedes/vim-pencil'
-Plug 'rking/ag.vim'
+" Plug 'rking/ag.vim' // deprecated
 Plug 'sjl/vitality.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-eunuch'

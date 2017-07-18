@@ -20,7 +20,7 @@ the base16-shell repo to add the appropriate stuff to your
 
 ## step plugins
 
-* [Ag](http://github.com/rking/ag.vim)
+* [Ack](http://github.com/mileszs/ack.vim)
 * [Ale](https://github.com/w0rp/ale)
 * [Auto Pairs](http://github.com/jiangmiao/auto-pairs)
 * [Breeze](http://github.com/gcmt/breeze.vim)
