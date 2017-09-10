@@ -9,6 +9,11 @@ let mapleader = "\<Space>"
 
 " Theme:
 " A: mad settings
+if system('uname -s') == "Darwin\n" " osx
+  set clipboard=unnamed " @see: http://bit.ly/2ie2GeK
+else " nix
+  set clipboard=unnamedplus
+endif
 set sidescroll=1
 set autoindent
 set sessionoptions=resize,winpos,winsize,buffers,tabpages,folds,curdir,help
@@ -39,8 +44,6 @@ set tabstop=2
 set textwidth=78
 set timeoutlen=1000
 set ttimeoutlen=10
-" set clipboard+=unnamedplus
-set clipboard=unnamed " @see: http://bit.ly/2ie2GeK
 set hidden
 
 " B: search
