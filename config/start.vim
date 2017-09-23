@@ -15,6 +15,7 @@ Plug 'bling/vim-bufferline'
 Plug 'brooth/far.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'ericpruitt/tmux.vim', {'rtp': 'vim/'}
 Plug 'ervandew/supertab'
 Plug 'itchyny/lightline.vim'
 Plug 'janko-m/vim-test'

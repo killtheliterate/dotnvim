@@ -43,8 +43,16 @@ if CheckForEslint()
   let g:ale_linters = {
   \   'javascript': ['eslint'],
   \ }
+
+  let g:ale_fixers = {
+  \   'javascript': ['eslint'],
+  \ }
 else
   let g:ale_linters = {
+  \   'javascript': ['standard'],
+  \ }
+
+  let g:ale_fixers = {
   \   'javascript': ['standard'],
   \ }
 endif
@@ -64,5 +72,10 @@ function! LinterStatus() abort
     \   all_errors
     \)
 endfunction
+
+" Fixer
+" ----------------------------------------------------------------------------
+
+let g:ale_fix_on_save=1
 
 set statusline=%{LinterStatus()}
