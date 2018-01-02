@@ -27,6 +27,7 @@ the base16-shell repo to add the appropriate stuff to your
 * [Bufferline](http://github.com/bling/vim-bufferline)
 * [CtrlP](http://github.com/kien/ctrlp.vim)
 * [Deoplete](http://github.com/Shougo/deoplete.nvim)
+* [Easymotion](https://github.com/easymotion/vim-easymotion)
 * [EditorConfig](http://github.com/editorconfig/editorconfig-vim)
 * [Eunuch](http://github.com/tpope/vim-eunuch)
 * [far](https://github.com/brooth/far.vim)

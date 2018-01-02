@@ -29,3 +29,5 @@ source $HOME/.config/nvim/config/plugin-config/vim-move.vim
 
 "" other stuff
 "" ---------------------------------------------------------------------------
+
+source $HOME/.config/nvim/config/plugin-config/language-client.vim
