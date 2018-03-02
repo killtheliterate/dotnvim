@@ -99,7 +99,7 @@ nnoremap k gk
 " vmap <C-j> ]egv
 
 " leader leader to switch between last 2 buffers
-nnoremap <leader><leader> <c-^>
+" nnoremap <leader><leader> <c-^>
 
 " Sass: stop sucking, sass
 au BufRead, BufNewFile *.scss set filetype=scss

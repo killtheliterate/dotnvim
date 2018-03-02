@@ -31,6 +31,7 @@ Plug 'machakann/vim-highlightedyank'
 " Plug 'floobits/floobits-neovim'
 Plug 'freitass/todo.txt-vim'
 Plug 'matze/vim-move'
+Plug 'metakirby5/codi.vim' " WHOOOOOAAAAAAAAAA
 Plug 'mhinz/vim-signify'
 Plug 'mhinz/vim-startify'
 " Plug 'mileszs/ack.vim'
@@ -90,7 +91,8 @@ Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 Plug 'nono/vim-handlebars',       {'for': 'hbs'}
 Plug 'plasticboy/vim-markdown',   {'for': 'markdown'}
 Plug 'toyamarinyon/vim-swift',    {'for': 'swift'}
-"
+Plug 'kylef/apiblueprint.vim',    {'for': 'apiblueprint'}
+
 " " OtOtOtherOtOtOther: Can't remember
 " Plug 'powerman/vim-plugin-AnsiEsc'
 " Plug 'tmux-plugins/vim-tmux-focus-events'
