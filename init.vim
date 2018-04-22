@@ -26,6 +26,7 @@ source $HOME/.config/nvim/config/plugin-config/reveal_in_finder.vim
 source $HOME/.config/nvim/config/plugin-config/ultisnips.vim
 source $HOME/.config/nvim/config/plugin-config/vim-jsx.vim
 source $HOME/.config/nvim/config/plugin-config/vim-move.vim
+source $HOME/.config/nvim/config/plugin-config/vim-tsx.vim
 
 "" other stuff
 "" ---------------------------------------------------------------------------

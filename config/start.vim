@@ -19,6 +19,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
 " Plug 'ericpruitt/tmux.vim', {'rtp': 'vim/'}
 Plug 'ervandew/supertab'
+" Plug 'floobits/floobits-neovim'
+Plug 'freitass/todo.txt-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'janko-m/vim-test'
 Plug 'jceb/vim-orgmode'
@@ -28,9 +30,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'justinmk/vim-dirvish'
 Plug 'luochen1990/rainbow'
 Plug 'machakann/vim-highlightedyank'
-" Plug 'floobits/floobits-neovim'
-Plug 'freitass/todo.txt-vim'
 Plug 'matze/vim-move'
+Plug 'maximbaz/lightline-ale'
 Plug 'metakirby5/codi.vim' " WHOOOOOAAAAAAAAAA
 Plug 'mhinz/vim-signify'
 Plug 'mhinz/vim-startify'
@@ -59,8 +60,14 @@ Plug 'eagletmt/neco-ghc',             {'for': ['haskell', 'cabal'], 'do': 'stack
 Plug 'Shougo/neco-vim',               {'for': 'vim'}
 Plug 'sirver/ultisnips'
 
-" " HhHhTML: kill me plox
-Plug 'Valloric/MatchTagAlways', {'for': ['html', 'tpl']}
+" TyTypescript: chule
+Plug 'leafgarland/typescript-vim',   {'for': ['typescript', 'typescript.jsx']}
+Plug 'peitalin/vim-jsx-typescript',  {'for': ['typescript', 'typescript.jsx']}
+" Plug 'herringtondarkholme/yats.vim', {'for': ['typescript', 'typescript.jsx']}
+" Plug 'quramy/tsuquyomi',             {'for': ['typescript', 'typescript.jsx']}
+
+" HhHhTML: kill me plox
+Plug 'valloric/matchtagalways', {'for': ['html', 'tpl']}
 Plug 'gcmt/breeze.vim',         {'for': ['html', 'tpl']}
 Plug 'tpope/vim-liquid',        {'for': ['html', 'tpl']}
 
@@ -69,7 +76,9 @@ Plug 'elixir-lang/vim-elixir',  {'for': 'elixir'}
 Plug 'slashmili/alchemist.vim', {'for': 'elixir'}
 
 " JjJjavactipt: what is javascript?
-Plug 'mxw/vim-jsx',              {'for': ['javascript', 'javascript.jsx']}
+Plug 'maxmellon/vim-jsx-pretty', {'for': ['javascript', 'javascript.jsx', 'typescript', 'typescript.jsx']}
+" Plug 'mxw/vim-jsx',              {'for': ['javascript', 'javascript.jsx']}
+" Plug 'othree/yajs.vim',          {'for': ['javascript', 'javascript.jsx']}
 Plug 'pangloss/vim-javascript',  {'for': ['javascript', 'javascript.jsx']}
 
 " HhHhaskell: laws only
@@ -86,18 +95,19 @@ Plug 'FrigoEU/psc-ide-vim/',   {'for': 'purescript'}
 "
 " " OtOtOther: Etc.
 Plug 'tmux-plugins/vim-tmux'
-Plug 'LeonB/vim-nginx',           {'for': 'nginx'}
+Plug 'leonb/vim-nginx',           {'for': 'nginx'}
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 Plug 'nono/vim-handlebars',       {'for': 'hbs'}
 Plug 'plasticboy/vim-markdown',   {'for': 'markdown'}
 Plug 'toyamarinyon/vim-swift',    {'for': 'swift'}
 Plug 'kylef/apiblueprint.vim',    {'for': 'apiblueprint'}
+Plug 'martinda/jenkinsfile-vim-syntax'
+Plug 'groenewege/vim-less'
 
 " " OtOtOtherOtOtOther: Can't remember
 " Plug 'powerman/vim-plugin-AnsiEsc'
-" Plug 'tmux-plugins/vim-tmux-focus-events'
-
 " Plug 'sheerun/vim-polyglot'
+" Plug 'tmux-plugins/vim-tmux-focus-events'
 
 " TtTtTheme: PRETTY PRETTY PRETTY PRETTY PRETTY PRETTY
 Plug 'chriskempson/base16-vim', {'do': 'git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell'}

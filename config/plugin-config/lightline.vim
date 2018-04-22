@@ -2,7 +2,22 @@
 let g:lightline = {
       \ 'mode_map': { 'c': 'NORMAL' },
       \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
+      \   'left': [ 
+      \     [ 'mode', 'paste' ],
+      \     [ 'fugitive', 'filename' ] 
+      \   ],
+      \   'right': [
+      \      [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ],
+      \      [ 'lineinfo' ],
+      \      [ 'percent' ],
+      \      [ 'fileformat', 'fileencoding', 'filetype' ] 
+      \   ]
+      \ },
+      \ 'component_expand': {
+      \   'linter_checking': 'lightline#ale#checking',
+      \   'linter_warnings': 'lightline#ale#warnings',
+      \   'linter_errors': 'lightline#ale#errors',
+      \   'linter_ok': 'lightline#ale#ok',
       \ },
       \ 'component_function': {
       \   'modified': 'LightlineModified',
@@ -14,12 +29,23 @@ let g:lightline = {
       \   'fileencoding': 'LightlineFileencoding',
       \   'mode': 'LightlineMode',
       \ },
+      \ 'component_type': {
+      \   'linter_checking': 'left',
+      \   'linter_warnings': 'warning',
+      \   'linter_errors': 'error',
+      \   'linter_ok': 'left',
+      \ },
       \ 'branch symbol': '',
       \ 'readonly symbol': '',
       \ 'linecolumn symbol': '',
       \ 'separator': { 'left': '', 'right': '' },
       \ 'subseparator': { 'left': '', 'right': '' },
       \ }
+
+let g:lightline#ale#indicator_checking = "\uf110"
+let g:lightline#ale#indicator_warnings = "\uf071"
+let g:lightline#ale#indicator_errors = "\uf05e"
+let g:lightline#ale#indicator_ok = "\uf00c"
 
 function! LightlineModified()
   return &ft =~ 'help\|vimfiler\|gundo' ? '' : &modified ? '+' : &modifiable ? '' : '-'

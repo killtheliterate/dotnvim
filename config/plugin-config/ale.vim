@@ -1,3 +1,8 @@
+
+" ----------------------------------------------------------------------------
+"  :ALEInfo to begin debugging
+" ----------------------------------------------------------------------------
+
 let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚠'
 
@@ -5,7 +10,11 @@ let g:ale_fix_on_save = 1
 highlight clear ALEErrorSign
 highlight clear ALEWarningSign
 
+" Show 5 lines of errors (default: 10)
+" let g:ale_list_window_size = 50
 " let g:ale_lint_on_text_changed = 'never'
+
+nmap <Tab> <Plug>(ale_detail)
 
 " Eslint vs. Standard
 " ----------------------------------------------------------------------------
@@ -39,22 +48,32 @@ function! CheckForEslint()
   endif
 endfunction
 
+" function! CheckForTslint()
+"   let eslintconfig =
+"   \ findfile('tslint.json', '.;', -1) +
+" endfunction
+
 if CheckForEslint()
   let g:ale_linters = {
   \   'javascript': ['eslint'],
+  \   'typescript': ['tsserver', 'tslint'],
   \ }
 
   let g:ale_fixers = {
   \   'javascript': ['eslint'],
+  \   'typescript': ['tslint'],
   \ }
 else
   let g:ale_linters = {
   \   'javascript': ['standard'],
+  \   'typescript': ['tsserver', 'tslint'],
   \ }
 
   let g:ale_fixers = {
   \   'javascript': ['standard'],
+  \   'typescript': ['tslint'],
   \ }
+
 endif
 
 " Status line
@@ -79,3 +98,18 @@ endfunction
 let g:ale_fix_on_save=1
 
 set statusline=%{LinterStatus()}
+
+" Do not lint or fix minified files.
+" ----------------------------------------------------------------------------
+
+let g:ale_pattern_options = {
+\   '\.bundle\.css$': {'ale_linters': [], 'ale_fixers': []},
+\   '\.bundle\.js$': {'ale_linters': [], 'ale_fixers': []},
+\   '\.min\.css$': {'ale_linters': [], 'ale_fixers': []},
+\   '\.min\.js$': {'ale_linters': [], 'ale_fixers': []},
+\ }
+
+" Enable completion where available.
+" ----------------------------------------------------------------------------
+
+let g:ale_completion_enabled = 1
