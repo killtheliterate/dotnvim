@@ -10,109 +10,82 @@ endif
 
 call plug#begin('$HOME/.config/nvim/.plugged')
 
-" PlPlPlugin:
-Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
-Plug 'bling/vim-bufferline'
-Plug 'brooth/far.vim'
+
+"" PlPlPlugin:
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
-" Plug 'ericpruitt/tmux.vim', {'rtp': 'vim/'}
-Plug 'ervandew/supertab'
-" Plug 'floobits/floobits-neovim'
-Plug 'freitass/todo.txt-vim'
 Plug 'itchyny/lightline.vim'
-Plug 'janko-m/vim-test'
-Plug 'jceb/vim-orgmode'
-Plug 'jiangmiao/auto-pairs'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+Plug 'jiangmiao/auto-pairs' " @see: https://bit.ly/2qQYZ0P
 Plug 'justinmk/vim-dirvish'
-Plug 'luochen1990/rainbow'
-Plug 'machakann/vim-highlightedyank'
+Plug 'bounceme/poppy.vim'
 Plug 'matze/vim-move'
 Plug 'maximbaz/lightline-ale'
-Plug 'metakirby5/codi.vim' " WHOOOOOAAAAAAAAAA
 Plug 'mhinz/vim-signify'
-Plug 'mhinz/vim-startify'
-" Plug 'mileszs/ack.vim'
-Plug 'mklabs/vim-json'
 Plug 'myusuf3/numbers.vim'
-Plug 'reedes/vim-pencil'
-" Plug 'rking/ag.vim' // deprecated
 Plug 'sjl/vitality.vim'
 Plug 'tomtom/tcomment_vim'
-" Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-git'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-vinegar' " @see http://bit.ly/2gyTOwp
 Plug 'w0rp/ale', {'do': 'npm install -g standard'}
 
-" I remember my first IDE:
+"" IdIDE:
+Plug 'Valloric/YouCompleteMe'
 " Plug 'honza/vim-snippets'
-Plug 'othree/csscomplete.vim'
-Plug 'roxma/nvim-cm-tern'           , {'do': 'npm install'}
-Plug 'roxma/nvim-completion-manager', {'do': 'pip3 install --user neovim jedi mistune psutil setproctitle'}
-Plug 'eagletmt/neco-ghc',             {'for': ['haskell', 'cabal'], 'do': 'stack install ghc-mod'}
-Plug 'Shougo/neco-vim',               {'for': 'vim'}
-Plug 'sirver/ultisnips'
+" Plug 'othree/csscomplete.vim'
+" Plug 'roxma/nvim-cm-tern'           , {'do': 'npm install'}
+" Plug 'roxma/nvim-completion-manager', {'do': 'pip3 install --user neovim jedi mistune psutil setproctitle'}
+" Plug 'eagletmt/neco-ghc',             {'for': ['haskell', 'cabal'], 'do': 'stack install ghc-mod'}
+" Plug 'Shougo/neco-vim',               {'for': 'vim'}
 
-" TyTypescript: chule
-Plug 'leafgarland/typescript-vim',   {'for': ['typescript', 'typescript.jsx']}
-Plug 'peitalin/vim-jsx-typescript',  {'for': ['typescript', 'typescript.jsx']}
-" Plug 'herringtondarkholme/yats.vim', {'for': ['typescript', 'typescript.jsx']}
-" Plug 'quramy/tsuquyomi',             {'for': ['typescript', 'typescript.jsx']}
+"" JjJjavactipt: what is javascript?
+Plug 'pangloss/vim-javascript'
+" Plug 'maxmellon/vim-jsx-pretty', {'for': ['javascript', 'javascript.jsx', 'typescript', 'typescript.jsx']}
+" " Plug 'mxw/vim-jsx',              {'for': ['javascript', 'javascript.jsx']}
+" " Plug 'othree/yajs.vim',          {'for': ['javascript', 'javascript.jsx']}
 
-" HhHhTML: kill me plox
-Plug 'valloric/matchtagalways', {'for': ['html', 'tpl']}
-Plug 'gcmt/breeze.vim',         {'for': ['html', 'tpl']}
-Plug 'tpope/vim-liquid',        {'for': ['html', 'tpl']}
+"" HhHhTML: kill me plox
+" Plug 'valloric/matchtagalways', {'for': ['html', 'tpl']}
+" Plug 'gcmt/breeze.vim',         {'for': ['html', 'tpl']}
+" Plug 'tpope/vim-liquid',        {'for': ['html', 'tpl']}
 
-" Elixir: okay, cool
-Plug 'elixir-lang/vim-elixir',  {'for': 'elixir'}
-Plug 'slashmili/alchemist.vim', {'for': 'elixir'}
+"" TyTypescript: chule
+Plug 'leafgarland/typescript-vim'
+" Plug 'peitalin/vim-jsx-typescript',  {'for': ['typescript', 'typescript.jsx']}
+" " Plug 'herringtondarkholme/yats.vim', {'for': ['typescript', 'typescript.jsx']}
+" " Plug 'quramy/tsuquyomi',             {'for': ['typescript', 'typescript.jsx']}
 
-" JjJjavactipt: what is javascript?
-Plug 'maxmellon/vim-jsx-pretty', {'for': ['javascript', 'javascript.jsx', 'typescript', 'typescript.jsx']}
-" Plug 'mxw/vim-jsx',              {'for': ['javascript', 'javascript.jsx']}
-" Plug 'othree/yajs.vim',          {'for': ['javascript', 'javascript.jsx']}
-Plug 'pangloss/vim-javascript',  {'for': ['javascript', 'javascript.jsx']}
+"" ElElixir: okay, cool
+" Plug 'elixir-lang/vim-elixir',  {'for': 'elixir'}
+" Plug 'slashmili/alchemist.vim', {'for': 'elixir'}
 
-" HhHhaskell: laws only
-Plug 'neovimhaskell/haskell-vim', {'for': ['haskell', 'cabal']}
-Plug 'parsonsmatt/intero-neovim', {'for': ['haskell', 'cabal']}
+"" HhHhaskell: laws only
+" Plug 'neovimhaskell/haskell-vim', {'for': ['haskell', 'cabal']}
+" Plug 'parsonsmatt/intero-neovim', {'for': ['haskell', 'cabal']}
 
-" ScScScala: It's like JavaScript, but still bad
-Plug 'ensime/ensime-vim',         {'for': 'scala'}
-Plug 'derekwyatt/vim-scala',      {'for': 'scala'}
+"" ScScScala: It's like JavaScript, but still bad
+" Plug 'ensime/ensime-vim',         {'for': 'scala'}
+" Plug 'derekwyatt/vim-scala',      {'for': 'scala'}
 
-" PuPuPurescript: Hmm. hmm.
-Plug 'raichoo/purescript-vim', {'for': 'purescript'}
-Plug 'FrigoEU/psc-ide-vim/',   {'for': 'purescript'}
-"
-" " OtOtOther: Etc.
-Plug 'tmux-plugins/vim-tmux'
-Plug 'leonb/vim-nginx',           {'for': 'nginx'}
-Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
-Plug 'nono/vim-handlebars',       {'for': 'hbs'}
-Plug 'plasticboy/vim-markdown',   {'for': 'markdown'}
-Plug 'toyamarinyon/vim-swift',    {'for': 'swift'}
-Plug 'kylef/apiblueprint.vim',    {'for': 'apiblueprint'}
-Plug 'martinda/jenkinsfile-vim-syntax'
-Plug 'groenewege/vim-less'
+"" PuPuPurescript: Hmm. hmm.
+" Plug 'raichoo/purescript-vim', {'for': 'purescript'}
+" Plug 'FrigoEU/psc-ide-vim/',   {'for': 'purescript'}
 
-" " OtOtOtherOtOtOther: Can't remember
-" Plug 'powerman/vim-plugin-AnsiEsc'
-" Plug 'sheerun/vim-polyglot'
-" Plug 'tmux-plugins/vim-tmux-focus-events'
+"" OtOtOther: Etc.
+" Plug 'ericpruitt/tmux.vim', {'rtp': 'vim/'}
+" Plug 'tmux-plugins/vim-tmux'
+" Plug 'leonb/vim-nginx',           {'for': 'nginx'}
+" Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
+" Plug 'nono/vim-handlebars',       {'for': 'hbs'}
+" Plug 'plasticboy/vim-markdown',   {'for': 'markdown'}
+" Plug 'toyamarinyon/vim-swift',    {'for': 'swift'}
+" Plug 'kylef/apiblueprint.vim',    {'for': 'apiblueprint'}
+" Plug 'martinda/jenkinsfile-vim-syntax'
 
-" TtTtTheme: PRETTY PRETTY PRETTY PRETTY PRETTY PRETTY
+"" TtTtTheme: PRETTY PRETTY PRETTY PRETTY PRETTY PRETTY
 Plug 'chriskempson/base16-vim', {'do': 'git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell'}
 
-" Lolkay: Some fance-shmance
+"" Lolkay: Some fance-shmance
 Plug 'ryanoasis/vim-devicons'
 
 call plug#end()

@@ -1,4 +1,3 @@
-
 " ----------------------------------------------------------------------------
 "  :ALEInfo to begin debugging
 " ----------------------------------------------------------------------------
@@ -10,13 +9,9 @@ let g:ale_fix_on_save = 1
 highlight clear ALEErrorSign
 highlight clear ALEWarningSign
 
-" Show 5 lines of errors (default: 10)
-" let g:ale_list_window_size = 50
-" let g:ale_lint_on_text_changed = 'never'
-
 nmap <Tab> <Plug>(ale_detail)
 
-" Eslint vs. Standard
+" Eslint vs. Standard vs. Tslint
 " ----------------------------------------------------------------------------
 
 function! CheckForEslintPkgJson() abort
@@ -25,7 +20,7 @@ function! CheckForEslintPkgJson() abort
   if packagejsonpath !=# ''
     let packagejson = join(readfile(packagejsonpath), '')
 
-    return has_key(JSON#parse(packagejson), 'eslintConfig')
+    return has_key(json_decode(packagejson), 'eslintConfig')
   else
     return 0
   endif
@@ -47,11 +42,6 @@ function! CheckForEslint()
     return CheckForEslintPkgJson()
   endif
 endfunction
-
-" function! CheckForTslint()
-"   let eslintconfig =
-"   \ findfile('tslint.json', '.;', -1) +
-" endfunction
 
 if CheckForEslint()
   let g:ale_linters = {
@@ -105,6 +95,8 @@ set statusline=%{LinterStatus()}
 let g:ale_pattern_options = {
 \   '\.bundle\.css$': {'ale_linters': [], 'ale_fixers': []},
 \   '\.bundle\.js$': {'ale_linters': [], 'ale_fixers': []},
+\   '\.chunk\.css$': {'ale_linters': [], 'ale_fixers': []},
+\   '\.chunk\.js$': {'ale_linters': [], 'ale_fixers': []},
 \   '\.min\.css$': {'ale_linters': [], 'ale_fixers': []},
 \   '\.min\.js$': {'ale_linters': [], 'ale_fixers': []},
 \ }
