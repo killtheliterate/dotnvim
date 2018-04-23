@@ -40,8 +40,8 @@ Plug 'Valloric/YouCompleteMe'
 
 "" JjJjavactipt: what is javascript?
 Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 " Plug 'maxmellon/vim-jsx-pretty', {'for': ['javascript', 'javascript.jsx', 'typescript', 'typescript.jsx']}
-" " Plug 'mxw/vim-jsx',              {'for': ['javascript', 'javascript.jsx']}
 " " Plug 'othree/yajs.vim',          {'for': ['javascript', 'javascript.jsx']}
 
 "" HhHhTML: kill me plox
@@ -51,9 +51,8 @@ Plug 'pangloss/vim-javascript'
 
 "" TyTypescript: chule
 Plug 'leafgarland/typescript-vim'
-" Plug 'peitalin/vim-jsx-typescript',  {'for': ['typescript', 'typescript.jsx']}
-" " Plug 'herringtondarkholme/yats.vim', {'for': ['typescript', 'typescript.jsx']}
-" " Plug 'quramy/tsuquyomi',             {'for': ['typescript', 'typescript.jsx']}
+Plug 'peitalin/vim-jsx-typescript'
+" Plug 'quramy/tsuquyomi'
 
 "" ElElixir: okay, cool
 " Plug 'elixir-lang/vim-elixir',  {'for': 'elixir'}
