@@ -1,4 +1,5 @@
-"
+let g:rainbow_active = 1
+
 " let gBlue = '#458588'
 " let gMagenta = '#b16286'
 " let gRed = '#cc241d'
@@ -25,8 +26,6 @@
 " \   'css': 0,
 " \ }
 " \}
-
-let g:rainbow_active = 1
 
 " ['blue', '#458588'], ['magenta', '#b16286']
 " ['red',  '#cc241d'], ['166',     '#d65d0e']

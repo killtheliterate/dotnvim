@@ -1,5 +1,3 @@
-let g:gruvbox_italic=1
-
 highlight Comment cterm=italic
 highlight Comment gui=italic
 highlight MatchParen cterm=bold ctermbg=darkmagenta ctermfg=white

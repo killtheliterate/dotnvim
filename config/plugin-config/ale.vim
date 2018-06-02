@@ -1,13 +1,16 @@
+" ----------------------------------------------------------------------------
+"  :ALEInfo to begin debugging
+" ----------------------------------------------------------------------------
+
 let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚠'
 
 let g:ale_fix_on_save = 1
-highlight clear ALEErrorSign
-highlight clear ALEWarningSign
 
-" let g:ale_lint_on_text_changed = 'never'
+nmap <Tab> <Plug>(ale_detail)
+nmap gd <Plug>(ale_go_to_definition_in_tab)
 
-" Eslint vs. Standard
+" Eslint vs. Standard vs. Tslint
 " ----------------------------------------------------------------------------
 
 function! CheckForEslintPkgJson() abort
@@ -16,7 +19,7 @@ function! CheckForEslintPkgJson() abort
   if packagejsonpath !=# ''
     let packagejson = join(readfile(packagejsonpath), '')
 
-    return has_key(JSON#parse(packagejson), 'eslintConfig')
+    return has_key(json_decode(packagejson), 'eslintConfig')
   else
     return 0
   endif
@@ -39,22 +42,30 @@ function! CheckForEslint()
   endif
 endfunction
 
+" Might not need an explicit setting for tsserver
+"
+" @see: https://github.com/w0rp/ale/issues/20#issuecomment-298776249
 if CheckForEslint()
   let g:ale_linters = {
   \   'javascript': ['eslint'],
+  \   'typescript': ['tsserver'],
   \ }
 
   let g:ale_fixers = {
   \   'javascript': ['eslint'],
+  \   'typescript': ['tslint'],
   \ }
 else
   let g:ale_linters = {
   \   'javascript': ['standard'],
+  \   'typescript': ['tsserver'],
   \ }
 
   let g:ale_fixers = {
   \   'javascript': ['standard'],
+  \   'typescript': ['tslint'],
   \ }
+
 endif
 
 " Status line
@@ -79,3 +90,20 @@ endfunction
 let g:ale_fix_on_save=1
 
 set statusline=%{LinterStatus()}
+
+" Do not lint or fix minified files.
+" ----------------------------------------------------------------------------
+
+let g:ale_pattern_options = {
+\   '\.bundle\.css$': {'ale_linters': [], 'ale_fixers': []},
+\   '\.bundle\.js$': {'ale_linters': [], 'ale_fixers': []},
+\   '\.chunk\.css$': {'ale_linters': [], 'ale_fixers': []},
+\   '\.chunk\.js$': {'ale_linters': [], 'ale_fixers': []},
+\   '\.min\.css$': {'ale_linters': [], 'ale_fixers': []},
+\   '\.min\.js$': {'ale_linters': [], 'ale_fixers': []},
+\ }
+
+" Enable completion where available.
+" ----------------------------------------------------------------------------
+
+let g:ale_completion_enabled = 1
