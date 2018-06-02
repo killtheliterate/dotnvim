@@ -6,10 +6,9 @@ let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚠'
 
 let g:ale_fix_on_save = 1
-highlight clear ALEErrorSign
-highlight clear ALEWarningSign
 
 nmap <Tab> <Plug>(ale_detail)
+nmap gd <Plug>(ale_go_to_definition_in_tab)
 
 " Eslint vs. Standard vs. Tslint
 " ----------------------------------------------------------------------------
@@ -43,10 +42,13 @@ function! CheckForEslint()
   endif
 endfunction
 
+" Might not need an explicit setting for tsserver
+"
+" @see: https://github.com/w0rp/ale/issues/20#issuecomment-298776249
 if CheckForEslint()
   let g:ale_linters = {
   \   'javascript': ['eslint'],
-  \   'typescript': ['tsserver', 'tslint'],
+  \   'typescript': ['tsserver'],
   \ }
 
   let g:ale_fixers = {
@@ -56,7 +58,7 @@ if CheckForEslint()
 else
   let g:ale_linters = {
   \   'javascript': ['standard'],
-  \   'typescript': ['tsserver', 'tslint'],
+  \   'typescript': ['tsserver'],
   \ }
 
   let g:ale_fixers = {

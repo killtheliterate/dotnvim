@@ -12,37 +12,37 @@ call plug#begin('$HOME/.config/nvim/.plugged')
 
 
 "" PlPlPlugin:
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'itchyny/lightline.vim'
-Plug 'jiangmiao/auto-pairs' " @see: https://bit.ly/2qQYZ0P
-Plug 'justinmk/vim-dirvish'
-Plug 'bounceme/poppy.vim'
-Plug 'matze/vim-move'
-Plug 'maximbaz/lightline-ale'
-Plug 'mhinz/vim-signify'
-Plug 'myusuf3/numbers.vim'
-Plug 'sjl/vitality.vim'
-Plug 'tomtom/tcomment_vim'
-Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
-Plug 'w0rp/ale', {'do': 'npm install -g standard'}
+Plug 'bounceme/poppy.vim'            " rainbows for parentheses
+Plug 'ctrlpvim/ctrlp.vim'            " fuzzy file navigation
+Plug 'editorconfig/editorconfig-vim' " indent the same...
+Plug 'floobits/floobits-neovim'      " magic stuff
+Plug 'itchyny/lightline.vim'         " an statusbar
+Plug 'jiangmiao/auto-pairs'          " autocomplete brackets: @see: https://bit.ly/2qQYZ0P
+Plug 'justinmk/vim-dirvish'          " file navigation
+Plug 'matze/vim-move'                " line-bubbling
+Plug 'maximbaz/lightline-ale'        " show lint errors in lightline
+Plug 'mhinz/vim-signify'             " show git changes in gutter
+Plug 'myusuf3/numbers.vim'           " relative line numbering
+Plug 'sjl/vitality.vim'              " iterm2 + tmux fixes
+Plug 'tomtom/tcomment_vim'           " comment out lines
+Plug 'tpope/vim-eunuch'              " vim + bash stuff
+Plug 'tpope/vim-fugitive'            " git stuff... mostly :Gblame
+Plug 'tpope/vim-repeat'              " repeat operator for more stuff
+Plug 'tpope/vim-surround'            " objects for surround stuff
+
+Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
 
 "" IdIDE:
-Plug 'Valloric/YouCompleteMe'
+" Plug 'majutsushi/tagbar'
+Plug 'valloric/youcompleteme'
+" Plug 'craigemery/vim-autotag'
+" Plug 'shougo/echodoc.vim'
+" Plug 'sirver/ultisnips'
 " Plug 'honza/vim-snippets'
-" Plug 'othree/csscomplete.vim'
-" Plug 'roxma/nvim-cm-tern'           , {'do': 'npm install'}
-" Plug 'roxma/nvim-completion-manager', {'do': 'pip3 install --user neovim jedi mistune psutil setproctitle'}
-" Plug 'eagletmt/neco-ghc',             {'for': ['haskell', 'cabal'], 'do': 'stack install ghc-mod'}
-" Plug 'Shougo/neco-vim',               {'for': 'vim'}
 
 "" JjJjavactipt: what is javascript?
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-" Plug 'maxmellon/vim-jsx-pretty', {'for': ['javascript', 'javascript.jsx', 'typescript', 'typescript.jsx']}
-" " Plug 'othree/yajs.vim',          {'for': ['javascript', 'javascript.jsx']}
 
 "" HhHhTML: kill me plox
 " Plug 'valloric/matchtagalways', {'for': ['html', 'tpl']}
@@ -52,7 +52,7 @@ Plug 'mxw/vim-jsx'
 "" TyTypescript: chule
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
-" Plug 'quramy/tsuquyomi'
+" Plug 'quramy/tsuquyomi' " collides with ALE
 
 "" ElElixir: okay, cool
 " Plug 'elixir-lang/vim-elixir',  {'for': 'elixir'}
@@ -70,11 +70,14 @@ Plug 'peitalin/vim-jsx-typescript'
 " Plug 'raichoo/purescript-vim', {'for': 'purescript'}
 " Plug 'FrigoEU/psc-ide-vim/',   {'for': 'purescript'}
 
+"" CsCss:
+" Plug 'othree/csscomplete.vim'
+" Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
+
 "" OtOtOther: Etc.
 " Plug 'ericpruitt/tmux.vim', {'rtp': 'vim/'}
 " Plug 'tmux-plugins/vim-tmux'
 " Plug 'leonb/vim-nginx',           {'for': 'nginx'}
-" Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 " Plug 'nono/vim-handlebars',       {'for': 'hbs'}
 " Plug 'plasticboy/vim-markdown',   {'for': 'markdown'}
 " Plug 'toyamarinyon/vim-swift',    {'for': 'swift'}
