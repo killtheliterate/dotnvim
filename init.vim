@@ -21,6 +21,7 @@ source $HOME/.config/nvim/config/tabs.vim
 source $HOME/.config/nvim/config/plugin-config/ale.vim
 source $HOME/.config/nvim/config/plugin-config/ctrlp.vim
 source $HOME/.config/nvim/config/plugin-config/dirvish.vim
+source $HOME/.config/nvim/config/plugin-config/easy-align.vim
 " source $HOME/.config/nvim/config/plugin-config/fzf.vim
 source $HOME/.config/nvim/config/plugin-config/lightline.vim
 source $HOME/.config/nvim/config/plugin-config/poppy.vim

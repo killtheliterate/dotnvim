@@ -18,9 +18,11 @@ Plug 'editorconfig/editorconfig-vim' " indent the same...
 Plug 'floobits/floobits-neovim'      " magic stuff
 Plug 'itchyny/lightline.vim'         " an statusbar
 Plug 'jiangmiao/auto-pairs'          " autocomplete brackets: @see: https://bit.ly/2qQYZ0P
+Plug 'junegunn/vim-easy-align'       " align stuff... like csv columns
 Plug 'justinmk/vim-dirvish'          " file navigation
 Plug 'matze/vim-move'                " line-bubbling
 Plug 'maximbaz/lightline-ale'        " show lint errors in lightline
+Plug 'mechatroner/rainbow_csv'       " csv pretties
 Plug 'mhinz/vim-signify'             " show git changes in gutter
 Plug 'myusuf3/numbers.vim'           " relative line numbering
 Plug 'sjl/vitality.vim'              " iterm2 + tmux fixes
@@ -30,7 +32,7 @@ Plug 'tpope/vim-fugitive'            " git stuff... mostly :Gblame
 Plug 'tpope/vim-repeat'              " repeat operator for more stuff
 Plug 'tpope/vim-surround'            " objects for surround stuff
 
-Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
+Plug 'w0rp/ale', {'commit': '9ef266d', 'do': 'npm install -g standard'} " linting
 
 "" IdIDE:
 " Plug 'majutsushi/tagbar'
@@ -72,7 +74,10 @@ Plug 'peitalin/vim-jsx-typescript'
 
 "" CsCss:
 " Plug 'othree/csscomplete.vim'
-" Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
+Plug 'ap/vim-css-color'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'juleswang/css.vim'
+
 
 "" OtOtOther: Etc.
 " Plug 'ericpruitt/tmux.vim', {'rtp': 'vim/'}
