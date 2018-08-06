@@ -10,3 +10,6 @@ E117: Unknown function: ale_linters#typescript#tsserver#GetExecutable
 Error detected while processing function ale#Lint[34]..ale#engine#RunLinters[14]..<SNR>84_RunLinter[2]..ale#lsp_linter#CheckWithLSP[2]..ale#lsp_linter#StartLSP[23]..ale#linter#GetCommand:
 line    1:
 E15: Invalid expression: has_key(a:linter, 'command_callback')   ? ale#util#GetFunction(a:linter.command_callback)(a:buffer)   : a:linter.command
+
+Error detected while processing FileType Auto commands for "typescriptreact":
+E117: Unknown function: TSOnBufEnter

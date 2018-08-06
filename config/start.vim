@@ -54,6 +54,7 @@ Plug 'mxw/vim-jsx'
 "" TyTypescript: chule
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+" Plug 'HerringtonDarkholme/yats.vim'
 " Plug 'quramy/tsuquyomi' " collides with ALE
 
 "" ElElixir: okay, cool
