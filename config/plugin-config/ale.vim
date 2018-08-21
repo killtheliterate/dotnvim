@@ -65,7 +65,6 @@ else
   \   'javascript': ['standard'],
   \   'typescript': ['tslint'],
   \ }
-
 endif
 
 " Status line
@@ -83,6 +82,13 @@ function! LinterStatus() abort
     \   all_errors
     \)
 endfunction
+
+
+" Alias
+" ----------------------------------------------------------------------------
+
+" trying to get linting/fixing working with YATS
+" let g:ale_linter_aliases = {'typescriptreact': 'typescript.jsx'}
 
 " Fixer
 " ----------------------------------------------------------------------------
