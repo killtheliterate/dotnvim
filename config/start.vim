@@ -31,6 +31,7 @@ Plug 'tpope/vim-eunuch'              " vim + bash stuff
 Plug 'tpope/vim-fugitive'            " git stuff... mostly :Gblame
 Plug 'tpope/vim-repeat'              " repeat operator for more stuff
 Plug 'tpope/vim-surround'            " objects for surround stuff
+Plug 'blueyed/vim-diminactive'       " dim inactive split
 
 Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
 
@@ -53,9 +54,9 @@ Plug 'mxw/vim-jsx'
 
 "" TyTypescript: chule
 " Plug 'herringtondarkholme/yats.vim'
-Plug 'ianks/vim-tsx'
+" Plug 'ianks/vim-tsx'
 Plug 'leafgarland/typescript-vim'
-" Plug 'peitalin/vim-jsx-typescript'
+Plug 'peitalin/vim-jsx-typescript'
 
 "" ElElixir: okay, cool
 " Plug 'elixir-lang/vim-elixir',  {'for': 'elixir'}

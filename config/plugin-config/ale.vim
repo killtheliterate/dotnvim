@@ -101,12 +101,13 @@ set statusline=%{LinterStatus()}
 " ----------------------------------------------------------------------------
 
 let g:ale_pattern_options = {
-\   '\.bundle\.css$': {'ale_linters': [], 'ale_fixers': []},
-\   '\.bundle\.js$': {'ale_linters': [], 'ale_fixers': []},
-\   '\.chunk\.css$': {'ale_linters': [], 'ale_fixers': []},
-\   '\.chunk\.js$': {'ale_linters': [], 'ale_fixers': []},
-\   '\.min\.css$': {'ale_linters': [], 'ale_fixers': []},
-\   '\.min\.js$': {'ale_linters': [], 'ale_fixers': []},
+\   '\.bundle\.css$': {'ale_enabled': 0},
+\   '\.bundle\.js$': {'ale_enabled': 0},
+\   '\.chunk\.css$': {'ale_enabled': 0},
+\   '\.chunk\.js$': {'ale_enabled': 0},
+\   '\.min\.css$': {'ale_enabled': 0},
+\   '\.min\.js$': {'ale_enabled': 0},
+\   '.*node_modules/*/.*$': {'ale_enabled': 0},
 \ }
 
 " Enable completion where available.

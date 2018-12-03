@@ -27,8 +27,9 @@ source $HOME/.config/nvim/config/plugin-config/lightline.vim
 source $HOME/.config/nvim/config/plugin-config/poppy.vim
 source $HOME/.config/nvim/config/plugin-config/tags.vim
 source $HOME/.config/nvim/config/plugin-config/vim-move.vim
-source $HOME/.config/nvim/config/plugin-config/yats.vim
+" source $HOME/.config/nvim/config/plugin-config/yats.vim
 source $HOME/.config/nvim/config/plugin-config/ycm.vim
+source $HOME/.config/nvim/config/plugin-config/vim-jsx-typescript.vim
 
 "" other stuff
 "" ---------------------------------------------------------------------------
