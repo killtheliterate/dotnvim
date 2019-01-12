@@ -10,6 +10,16 @@ let g:ale_fix_on_save = 1
 nmap <Tab> <Plug>(ale_detail)
 nmap gd <Plug>(ale_go_to_definition_in_tab)
 
+" ale-sensible
+" ----------------------------------------------------------------------------
+
+let g:ale_set_signs = 0
+hi link ALEErrorLine ErrorMsg
+hi link ALEWarningLine WarningMsg
+let g:ale_lint_on_text_changed = 'normal'
+let g:ale_lint_on_insert_leave = 1
+let g:ale_lint_delay = 0
+
 " Eslint vs. Standard vs. Tslint
 " ----------------------------------------------------------------------------
 
