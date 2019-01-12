@@ -8,12 +8,14 @@ source $HOME/.config/nvim/config/start.vim
 "" the things
 "" ---------------------------------------------------------------------------
 
-source $HOME/.config/nvim/config/color.vim
 source $HOME/.config/nvim/config/general.vim
-source $HOME/.config/nvim/config/highlight.vim
-source $HOME/.config/nvim/config/moretypes.vim
-source $HOME/.config/nvim/config/reveal.vim
+
+source $HOME/.config/nvim/config/color.vim
+" source $HOME/.config/nvim/config/moretypes.vim
 source $HOME/.config/nvim/config/tabs.vim
+source $HOME/.config/nvim/config/highlight.vim
+
+source $HOME/.config/nvim/config/reveal.vim
 
 "" plugin configuration
 "" ---------------------------------------------------------------------------
