@@ -15,7 +15,7 @@ call plug#begin('$HOME/.config/nvim/.plugged')
 Plug 'bounceme/poppy.vim'            " rainbows for parentheses
 Plug 'ctrlpvim/ctrlp.vim'            " fuzzy file navigation
 Plug 'editorconfig/editorconfig-vim' " indent the same...
-Plug 'floobits/floobits-neovim'      " magic stuff
+" Plug 'floobits/floobits-neovim'      " magic stuff
 Plug 'itchyny/lightline.vim'         " an statusbar
 Plug 'jiangmiao/auto-pairs'          " autocomplete brackets: @see: https://bit.ly/2qQYZ0P
 Plug 'junegunn/vim-easy-align'       " align stuff... like csv columns
@@ -31,8 +31,9 @@ Plug 'tpope/vim-eunuch'              " vim + bash stuff
 Plug 'tpope/vim-fugitive'            " git stuff... mostly :Gblame
 Plug 'tpope/vim-repeat'              " repeat operator for more stuff
 Plug 'tpope/vim-surround'            " objects for surround stuff
+Plug 'blueyed/vim-diminactive'       " dim inactive split
 
-Plug 'w0rp/ale', {'commit': '9ef266d', 'do': 'npm install -g standard'} " linting
+Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
 
 "" IdIDE:
 " Plug 'majutsushi/tagbar'
@@ -52,10 +53,10 @@ Plug 'mxw/vim-jsx'
 " Plug 'tpope/vim-liquid',        {'for': ['html', 'tpl']}
 
 "" TyTypescript: chule
+" Plug 'herringtondarkholme/yats.vim'
+" Plug 'ianks/vim-tsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
-" Plug 'HerringtonDarkholme/yats.vim'
-" Plug 'quramy/tsuquyomi' " collides with ALE
 
 "" ElElixir: okay, cool
 " Plug 'elixir-lang/vim-elixir',  {'for': 'elixir'}

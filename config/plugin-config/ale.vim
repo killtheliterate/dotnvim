@@ -10,6 +10,16 @@ let g:ale_fix_on_save = 1
 nmap <Tab> <Plug>(ale_detail)
 nmap gd <Plug>(ale_go_to_definition_in_tab)
 
+" ale-sensible
+" ----------------------------------------------------------------------------
+
+let g:ale_set_signs = 0
+hi link ALEErrorLine ErrorMsg
+hi link ALEWarningLine WarningMsg
+let g:ale_lint_on_text_changed = 'normal'
+let g:ale_lint_on_insert_leave = 1
+let g:ale_lint_delay = 0
+
 " Eslint vs. Standard vs. Tslint
 " ----------------------------------------------------------------------------
 
@@ -65,7 +75,6 @@ else
   \   'javascript': ['standard'],
   \   'typescript': ['tslint'],
   \ }
-
 endif
 
 " Status line
@@ -84,6 +93,13 @@ function! LinterStatus() abort
     \)
 endfunction
 
+
+" Alias
+" ----------------------------------------------------------------------------
+
+" trying to get linting/fixing working with YATS
+" let g:ale_linter_aliases = {'typescriptreact': 'typescript.jsx'}
+
 " Fixer
 " ----------------------------------------------------------------------------
 
@@ -95,12 +111,13 @@ set statusline=%{LinterStatus()}
 " ----------------------------------------------------------------------------
 
 let g:ale_pattern_options = {
-\   '\.bundle\.css$': {'ale_linters': [], 'ale_fixers': []},
-\   '\.bundle\.js$': {'ale_linters': [], 'ale_fixers': []},
-\   '\.chunk\.css$': {'ale_linters': [], 'ale_fixers': []},
-\   '\.chunk\.js$': {'ale_linters': [], 'ale_fixers': []},
-\   '\.min\.css$': {'ale_linters': [], 'ale_fixers': []},
-\   '\.min\.js$': {'ale_linters': [], 'ale_fixers': []},
+\   '\.bundle\.css$': {'ale_enabled': 0},
+\   '\.bundle\.js$': {'ale_enabled': 0},
+\   '\.chunk\.css$': {'ale_enabled': 0},
+\   '\.chunk\.js$': {'ale_enabled': 0},
+\   '\.min\.css$': {'ale_enabled': 0},
+\   '\.min\.js$': {'ale_enabled': 0},
+\   '.*node_modules/*/.*$': {'ale_enabled': 0},
 \ }
 
 " Enable completion where available.
