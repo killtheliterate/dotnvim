@@ -4,7 +4,6 @@
 
 let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚠'
-
 let g:ale_fix_on_save = 1
 
 nmap <Tab> <Plug>(ale_detail)
@@ -13,7 +12,6 @@ nmap gd <Plug>(ale_go_to_definition_in_tab)
 " ale-sensible
 " ----------------------------------------------------------------------------
 
-let g:ale_set_signs = 0
 hi link ALEErrorLine ErrorMsg
 hi link ALEWarningLine WarningMsg
 let g:ale_lint_on_text_changed = 'normal'
@@ -59,21 +57,25 @@ if CheckForEslint()
   let g:ale_linters = {
   \   'javascript': ['eslint'],
   \   'typescript': ['tsserver'],
+  \   'scss': ['stylelint'],
   \ }
 
   let g:ale_fixers = {
   \   'javascript': ['eslint'],
   \   'typescript': ['tslint'],
+  \   'scss': ['stylelint'],
   \ }
 else
   let g:ale_linters = {
   \   'javascript': ['standard'],
   \   'typescript': ['tsserver'],
+  \   'scss': ['stylelint'],
   \ }
 
   let g:ale_fixers = {
   \   'javascript': ['standard'],
   \   'typescript': ['tslint'],
+  \   'scss': ['stylelint'],
   \ }
 endif
 

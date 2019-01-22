@@ -35,7 +35,7 @@ Plug 'tpope/vim-surround'            " objects for surround stuff
 
 
 "" IdIDE:
-Plug 'autozimu/languageclient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
+" Plug 'autozimu/languageclient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
 " Plug 'craigemery/vim-autotag'
 " Plug 'honza/vim-snippets'
 " Plug 'majutsushi/tagbar'
@@ -49,8 +49,9 @@ Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
 Plug 'shougo/neco-vim'
 
 "" JjJjavactipt: what is javascript?
-Plug 'pangloss/vim-javascript'
+" Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
 
 "" HhHhTML: kill me plox
 " Plug 'gcmt/breeze.vim',         {'for': ['html', 'tpl']}
@@ -60,7 +61,7 @@ Plug 'mxw/vim-jsx'
 "" TyTypescript: chule
 " Plug 'herringtondarkholme/yats.vim'
 " Plug 'ianks/vim-tsx'
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+" Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
