@@ -10,16 +10,15 @@ endif
 
 call plug#begin('$HOME/.config/nvim/.plugged')
 
-
 "" PlPlPlugin:
+Plug 'justinmk/vim-dirvish'          " file navigation... F I R S T
+Plug 'blueyed/vim-diminactive'       " dim inactive split
 Plug 'bounceme/poppy.vim'            " rainbows for parentheses
-Plug 'ctrlpvim/ctrlp.vim'            " fuzzy file navigation
 Plug 'editorconfig/editorconfig-vim' " indent the same...
 " Plug 'floobits/floobits-neovim'      " magic stuff
 Plug 'itchyny/lightline.vim'         " an statusbar
 Plug 'jiangmiao/auto-pairs'          " autocomplete brackets: @see: https://bit.ly/2qQYZ0P
 Plug 'junegunn/vim-easy-align'       " align stuff... like csv columns
-Plug 'justinmk/vim-dirvish'          " file navigation
 Plug 'matze/vim-move'                " line-bubbling
 Plug 'maximbaz/lightline-ale'        " show lint errors in lightline
 Plug 'mechatroner/rainbow_csv'       " csv pretties
@@ -31,30 +30,40 @@ Plug 'tpope/vim-eunuch'              " vim + bash stuff
 Plug 'tpope/vim-fugitive'            " git stuff... mostly :Gblame
 Plug 'tpope/vim-repeat'              " repeat operator for more stuff
 Plug 'tpope/vim-surround'            " objects for surround stuff
-Plug 'blueyed/vim-diminactive'       " dim inactive split
 
-Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
+"" F U Z Z: find files
+" Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 "" IdIDE:
-" Plug 'majutsushi/tagbar'
-Plug 'valloric/youcompleteme'
+" Plug 'autozimu/languageclient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
 " Plug 'craigemery/vim-autotag'
+" Plug 'honza/vim-snippets'
+" Plug 'majutsushi/tagbar'
+Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'} " @see: https://github.com/Shougo/deoplete.nvim/wiki/Completion-Sources
 " Plug 'shougo/echodoc.vim'
 " Plug 'sirver/ultisnips'
-" Plug 'honza/vim-snippets'
+" Plug 'valloric/youcompleteme'
+Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
+
+"" VimL: hrmm
+Plug 'shougo/neco-vim'
 
 "" JjJjavactipt: what is javascript?
-Plug 'pangloss/vim-javascript'
+" Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
 
 "" HhHhTML: kill me plox
-" Plug 'valloric/matchtagalways', {'for': ['html', 'tpl']}
 " Plug 'gcmt/breeze.vim',         {'for': ['html', 'tpl']}
 " Plug 'tpope/vim-liquid',        {'for': ['html', 'tpl']}
+" Plug 'valloric/matchtagalways', {'for': ['html', 'tpl']}
 
 "" TyTypescript: chule
 " Plug 'herringtondarkholme/yats.vim'
 " Plug 'ianks/vim-tsx'
+" Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
@@ -75,21 +84,22 @@ Plug 'peitalin/vim-jsx-typescript'
 " Plug 'FrigoEU/psc-ide-vim/',   {'for': 'purescript'}
 
 "" CsCss:
-" Plug 'othree/csscomplete.vim'
 Plug 'ap/vim-css-color'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'juleswang/css.vim'
+" Plug 'othree/csscomplete.vim'
 
 
 "" OtOtOther: Etc.
+Plug 'shougo/neco-syntax'
 " Plug 'ericpruitt/tmux.vim', {'rtp': 'vim/'}
-" Plug 'tmux-plugins/vim-tmux'
+" Plug 'kylef/apiblueprint.vim',    {'for': 'apiblueprint'}
 " Plug 'leonb/vim-nginx',           {'for': 'nginx'}
+" Plug 'martinda/jenkinsfile-vim-syntax'
 " Plug 'nono/vim-handlebars',       {'for': 'hbs'}
 " Plug 'plasticboy/vim-markdown',   {'for': 'markdown'}
+" Plug 'tmux-plugins/vim-tmux'
 " Plug 'toyamarinyon/vim-swift',    {'for': 'swift'}
-" Plug 'kylef/apiblueprint.vim',    {'for': 'apiblueprint'}
-" Plug 'martinda/jenkinsfile-vim-syntax'
 
 "" TtTtTheme: PRETTY PRETTY PRETTY PRETTY PRETTY PRETTY
 Plug 'chriskempson/base16-vim', {'do': 'git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell'}
