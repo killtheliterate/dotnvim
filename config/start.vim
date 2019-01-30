@@ -10,17 +10,15 @@ endif
 
 call plug#begin('$HOME/.config/nvim/.plugged')
 
-
 "" PlPlPlugin:
+Plug 'justinmk/vim-dirvish'          " file navigation... F I R S T
 Plug 'blueyed/vim-diminactive'       " dim inactive split
 Plug 'bounceme/poppy.vim'            " rainbows for parentheses
-Plug 'ctrlpvim/ctrlp.vim'            " fuzzy file navigation
 Plug 'editorconfig/editorconfig-vim' " indent the same...
 " Plug 'floobits/floobits-neovim'      " magic stuff
 Plug 'itchyny/lightline.vim'         " an statusbar
 Plug 'jiangmiao/auto-pairs'          " autocomplete brackets: @see: https://bit.ly/2qQYZ0P
 Plug 'junegunn/vim-easy-align'       " align stuff... like csv columns
-Plug 'justinmk/vim-dirvish'          " file navigation
 Plug 'matze/vim-move'                " line-bubbling
 Plug 'maximbaz/lightline-ale'        " show lint errors in lightline
 Plug 'mechatroner/rainbow_csv'       " csv pretties
@@ -33,6 +31,10 @@ Plug 'tpope/vim-fugitive'            " git stuff... mostly :Gblame
 Plug 'tpope/vim-repeat'              " repeat operator for more stuff
 Plug 'tpope/vim-surround'            " objects for surround stuff
 
+"" F U Z Z: find files
+" Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 "" IdIDE:
 " Plug 'autozimu/languageclient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
