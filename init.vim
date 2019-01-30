@@ -3,7 +3,7 @@
 "" ❤ ☠ ⚒ ☞ ☛ ☚ ☜ » « ☹ → ← ⚔
 "" http://xkcd.com/1172
 
-source $HOME/.config/nvim/config/start.vim
+source $HOME/.config/nvim/config/plugins.vim
 
 "" the things
 "" ---------------------------------------------------------------------------

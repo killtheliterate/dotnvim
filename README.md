@@ -10,7 +10,7 @@ git clone http://github.com/killtheliterate/dotnvim.git ~/.config/nvim
 
 ## step two
 
-Start neovim, and run `:PlugInstall`
+`$ nvim +PlugInstall +UpdateRemotePlugins +qa`
 
 ## step colors
 
@@ -23,10 +23,12 @@ the base16-shell repo to add the appropriate stuff to your
 * [Ale](https://github.com/w0rp/ale)
 * [Auto Pairs](http://github.com/jiangmiao/auto-pairs)
 * [CtrlP](http://github.com/kien/ctrlp.vim)
+* [Deoplete](http://github.com/sjl/shougo/deoplete.nvim)
+* [Diminactive](https://github.com/blueyed/vim-diminactive)
 * [Dirvish](https://github.com/justinmk/vim-dirvish)
 * [EditorConfig](http://github.com/editorconfig/editorconfig-vim)
 * [Eunuch](http://github.com/tpope/vim-eunuch)
-* [Floobits](https://github.com/floobits/floobits-neovim)
+* [FZF](http://github.com/junegunn/fzf.vim)
 * [Fugitive](http://github.com/tpope/vim-fugitive)
 * [Git](http://github.com/tpope/vim-git)
 * [Lightline](http://github.com/itchyny/lightline.vim)
@@ -37,12 +39,12 @@ the base16-shell repo to add the appropriate stuff to your
 * [Repeat](http://github.com/tpope/vim-repeat)
 * [Signify](http://github.com/mhinz/vim-signify)
 * [Surround](http://github.com/tpope/vim-surround)
-* [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 * [Vitality](http://github.com/sjl/vitality.vim)
-* [YouCompleteMe](http://github.com/valloric/youcompleteme)
 * [tComment](http://github.com/tomtom/tcomment_vim)
+* [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 * Stuff for JavaScript
 * Stuff for TypeScript
+* Stuff for other stuff
 
 ## step yep
 
