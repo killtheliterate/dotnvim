@@ -48,4 +48,4 @@ the base16-shell repo to add the appropriate stuff to your
 
 ## step yep
 
-`$ nvim +PlugInstall +UpdateRemotePlugins +qa`
+`:Plug` & `:PlugClean` & `:PlugUpdate` & `:UpdateRemotePlugins`
