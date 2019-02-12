@@ -22,4 +22,4 @@ endif
 "   echo "typescript-language-server not installed!\n"
 " endif
 
-" nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+nnoremap <F5> :call LanguageClient_contextMenu()<CR>

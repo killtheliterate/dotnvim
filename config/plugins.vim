@@ -37,7 +37,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 "" IdIDE:
-" Plug 'autozimu/languageclient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
+Plug 'autozimu/languageclient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
 " Plug 'craigemery/vim-autotag'
 " Plug 'honza/vim-snippets'
 " Plug 'majutsushi/tagbar'

@@ -1,3 +1,9 @@
+" ZEEEE TRIGGERRRRR
+nnoremap <silent> <C-p> :FZF<CR>
+
+" The rest of this is just taken from the githubz
+" ...
+
 " This is the default extra key bindings
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
