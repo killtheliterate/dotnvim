@@ -2,6 +2,8 @@
 .init.*
 .netrwhist
 .plugged
+LanguageClient.log
+LanguageServer.log
 backups
 plugins
 spell

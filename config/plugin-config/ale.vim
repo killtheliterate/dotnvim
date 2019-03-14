@@ -7,7 +7,7 @@ let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚠'
 let g:ale_fix_on_save = 1
 nmap <Tab> <Plug>(ale_detail)
-nmap gd <Plug>(ale_go_to_definition_in_tab)
+" nmap gd <Plug>(ale_go_to_definition_in_tab)
 set statusline=%{LinterStatus()}
 
 " ale-sensible: https://github.com/desmap/ale-sensible
