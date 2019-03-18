@@ -1,5 +1,3 @@
-set hidden
-
 " Automatically start language servers.
 let g:LanguageClient_autoStart = 1
 
@@ -11,11 +9,10 @@ let g:LanguageClient_serverStderr = expand('~/.config/nvim/LanguageServer.log')
 let g:LanguageClient_loggingLevel = 'INFO'
 
 if executable('javascript-typescript-stdio')
-  let g:LanguageClient_serverCommands.javascript = ['javascript-typescript-stdio']
-  let g:LanguageClient_serverCommands.typescript = ['javascript-typescript-stdio']
-  let g:LanguageClient_serverCommands['javascript.jsx'] = ['javascript-typescript-stdio']
-  " let g:LanguageClient_serverCommands['typescript.jsx'] = ['javascript-typescript-stdio']
-  let g:LanguageClient_serverCommands['typescript.tsx'] = ['javascript-typescript-stdio']
+  let g:LanguageClient_serverCommands['javascript'] = ['javascript-typescript-stdio', '-l', 'logloglog']
+  let g:LanguageClient_serverCommands['typescript'] = ['javascript-typescript-stdio', '-l', 'logloglog']
+  let g:LanguageClient_serverCommands['javascript.jsx'] = ['javascript-typescript-stdio', '-l', 'logloglog']
+  let g:LanguageClient_serverCommands['typescript.tsx'] = ['javascript-typescript-stdio', '-l', 'logloglog']
 else
   echo "javascript-typescript-stdio not installed!\n"
 endif
