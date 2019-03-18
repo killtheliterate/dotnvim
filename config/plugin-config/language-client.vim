@@ -9,10 +9,10 @@ let g:LanguageClient_serverStderr = expand('~/.config/nvim/LanguageServer.log')
 let g:LanguageClient_loggingLevel = 'INFO'
 
 if executable('javascript-typescript-stdio')
-  let g:LanguageClient_serverCommands['javascript'] = ['javascript-typescript-stdio', '-l', 'logloglog']
-  let g:LanguageClient_serverCommands['typescript'] = ['javascript-typescript-stdio', '-l', 'logloglog']
-  let g:LanguageClient_serverCommands['javascript.jsx'] = ['javascript-typescript-stdio', '-l', 'logloglog']
-  let g:LanguageClient_serverCommands['typescript.tsx'] = ['javascript-typescript-stdio', '-l', 'logloglog']
+  let g:LanguageClient_serverCommands['javascript'] = ['javascript-typescript-stdio', '-l', '~/.config/nvim/LanguageClientWarn.log']
+  let g:LanguageClient_serverCommands['typescript'] = ['javascript-typescript-stdio', '-l', '~/.config/nvim/LanguageClientWarn.log']
+  let g:LanguageClient_serverCommands['javascript.jsx'] = ['javascript-typescript-stdio', '-l', '~/.config/nvim/LanguageClientWarn.log']
+  let g:LanguageClient_serverCommands['typescript.tsx'] = ['javascript-typescript-stdio', '-l', '~/.config/nvim/LanguageClientWarn.log']
 else
   echo "javascript-typescript-stdio not installed!\n"
 endif

@@ -3,6 +3,7 @@
 .netrwhist
 .plugged
 LanguageClient.log
+LanguageClientWarn.log
 LanguageServer.log
 backups
 plugins
