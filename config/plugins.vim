@@ -33,7 +33,7 @@ Plug 'tpope/vim-surround'            " objects for surround stuff
 
 "" F U Z Z: find files
 " Plug 'ctrlpvim/ctrlp.vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 Plug 'junegunn/fzf.vim'
 
 "" IdIDE:
