@@ -32,40 +32,23 @@ Plug 'tpope/vim-repeat'              " repeat operator for more stuff
 Plug 'tpope/vim-surround'            " objects for surround stuff
 
 "" F U Z Z: find files
-" Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 Plug 'junegunn/fzf.vim'
 
 "" IdIDE:
 Plug 'autozimu/languageclient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
-" Plug 'craigemery/vim-autotag'
-" Plug 'honza/vim-snippets'
-" Plug 'majutsushi/tagbar'
 Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'} " @see: https://github.com/Shougo/deoplete.nvim/wiki/Completion-Sources
-" Plug 'shougo/echodoc.vim'
-" Plug 'sirver/ultisnips'
-" Plug 'valloric/youcompleteme'
 Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
 
 "" VimL: hrmm
 Plug 'shougo/neco-vim'
 
 "" JjJjavactipt: what is javascript?
-" Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 
-"" HhHhTML: kill me plox
-" Plug 'gcmt/breeze.vim',         {'for': ['html', 'tpl']}
-" Plug 'tpope/vim-liquid',        {'for': ['html', 'tpl']}
-" Plug 'valloric/matchtagalways', {'for': ['html', 'tpl']}
-
 "" TyTypescript: chule
-" Plug 'herringtondarkholme/yats.vim'
-" Plug 'ianks/vim-tsx'
-" Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
+Plug 'herringtondarkholme/yats.vim'
 
 "" ElElixir: okay, cool
 " Plug 'elixir-lang/vim-elixir',  {'for': 'elixir'}
@@ -87,7 +70,6 @@ Plug 'peitalin/vim-jsx-typescript'
 Plug 'ap/vim-css-color'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'juleswang/css.vim'
-" Plug 'othree/csscomplete.vim'
 
 
 "" OtOtOther: Etc.
