@@ -44,11 +44,12 @@ Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
 Plug 'shougo/neco-vim'
 
 "" JjJjavactipt: what is javascript?
-Plug 'mxw/vim-jsx'
+" Plug 'mxw/vim-jsx'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
 
 "" TyTypescript: chule
-Plug 'herringtondarkholme/yats.vim'
+Plug 'leafgarland/typescript-vim'
 
 "" ElElixir: okay, cool
 " Plug 'elixir-lang/vim-elixir',  {'for': 'elixir'}

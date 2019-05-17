@@ -26,7 +26,6 @@ source $HOME/.config/nvim/config/plugin-config/language-client.vim
 source $HOME/.config/nvim/config/plugin-config/lightline.vim
 source $HOME/.config/nvim/config/plugin-config/poppy.vim
 source $HOME/.config/nvim/config/plugin-config/vim-move.vim
-source $HOME/.config/nvim/config/plugin-config/yats.vim
 
 "" ---------------------------------------------------------------------------
 
