@@ -36,20 +36,22 @@ Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 Plug 'junegunn/fzf.vim'
 
 "" IdIDE:
-Plug 'autozimu/languageclient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
+" Plug 'autozimu/languageclient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'} " @see: https://github.com/Shougo/deoplete.nvim/wiki/Completion-Sources
 Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
+Plug 'sheerun/vim-polyglot'
 
 "" VimL: hrmm
-Plug 'shougo/neco-vim'
+" Plug 'shougo/neco-vim'
 
 "" JjJjavactipt: what is javascript?
 " Plug 'mxw/vim-jsx'
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'pangloss/vim-javascript'
+" Plug 'pangloss/vim-javascript'
 
 "" TyTypescript: chule
-Plug 'leafgarland/typescript-vim'
+" Plug 'leafgarland/typescript-vim'
 
 "" ElElixir: okay, cool
 " Plug 'elixir-lang/vim-elixir',  {'for': 'elixir'}
@@ -68,13 +70,13 @@ Plug 'leafgarland/typescript-vim'
 " Plug 'FrigoEU/psc-ide-vim/',   {'for': 'purescript'}
 
 "" CsCss:
-Plug 'ap/vim-css-color'
-Plug 'cakebaker/scss-syntax.vim'
-Plug 'juleswang/css.vim'
+" Plug 'ap/vim-css-color'
+" Plug 'cakebaker/scss-syntax.vim'
+" Plug 'juleswang/css.vim'
 
 
 "" OtOtOther: Etc.
-Plug 'shougo/neco-syntax'
+" Plug 'shougo/neco-syntax'
 " Plug 'ericpruitt/tmux.vim', {'rtp': 'vim/'}
 " Plug 'kylef/apiblueprint.vim',    {'for': 'apiblueprint'}
 " Plug 'leonb/vim-nginx',           {'for': 'nginx'}

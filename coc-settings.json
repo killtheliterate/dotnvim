@@ -1,0 +1,5 @@
+{
+  "tsserver.npm": "~/n/bin/npm",
+  "diagnostic.warningSign": "⚠",
+  "diagnostic.errorSign": "✗"
+}

@@ -22,6 +22,7 @@ the base16-shell repo to add the appropriate stuff to your
 
 * [ale](https://github.com/w0rp/ale)
 * [auto-pairs](http://github.com/jiangmiao/auto-pairs)
+* [coc](https://github.com/neoclide/coc.nvim)
 * [deoplete](http://github.com/sjl/shougo/deoplete.nvim)
 * [diminactive](https://github.com/blueyed/vim-diminactive)
 * [dirvish](https://github.com/justinmk/vim-dirvish)
@@ -45,9 +46,10 @@ the base16-shell repo to add the appropriate stuff to your
 * Stuff for TypeScript
 * Stuff for other stuff
 
+## step [Coc](https://github.com/neoclide/coc.nvim)
+`:CocInstall coc-tsserver coc-json`
+
 ## step yep
 
 `:Plug` & `:PlugClean` & `:PlugUpdate` & `:UpdateRemotePlugins`
 
-## step typescript
-`npm install -g javascript-typescript-langserver`
