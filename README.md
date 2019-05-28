@@ -47,9 +47,9 @@ the base16-shell repo to add the appropriate stuff to your
 * Stuff for other stuff
 
 ## step [Coc](https://github.com/neoclide/coc.nvim)
+
 `:CocInstall coc-tsserver coc-json`
 
 ## step yep
 
 `:Plug` & `:PlugClean` & `:PlugUpdate` & `:UpdateRemotePlugins`
-

@@ -38,7 +38,7 @@ Plug 'junegunn/fzf.vim'
 "" IdIDE:
 " Plug 'autozimu/languageclient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
-Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'} " @see: https://github.com/Shougo/deoplete.nvim/wiki/Completion-Sources
+" Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'} " @see: https://github.com/Shougo/deoplete.nvim/wiki/Completion-Sources
 Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
 Plug 'sheerun/vim-polyglot'
 

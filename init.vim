@@ -3,6 +3,9 @@
 "" ❤ ☠ ⚒ ☞ ☛ ☚ ☜ » « ☹ → ← ⚔
 "" http://xkcd.com/1172
 
+let $NVIM_COC_LOG_LEVEL = 'debug'
+" let g:coc_node_args = ['--nolazy', '--inspect-brk=6045']
+
 source $HOME/.config/nvim/config/plugins.vim
 
 "" the things

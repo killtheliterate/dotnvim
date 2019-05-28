@@ -1,5 +1,9 @@
 {
-  "tsserver.npm": "~/n/bin/npm",
+  "diagnostic.errorSign": "✗",
+  "diagnostic.hintSign": "➤",
+  "diagnostic.infoSign": "i",
   "diagnostic.warningSign": "⚠",
-  "diagnostic.errorSign": "✗"
+  "tsserver.npm": "~/n/bin/npm",
+  "tsserver.trace.server": "verbose",
+  "workspace.showOutput": true
 }
