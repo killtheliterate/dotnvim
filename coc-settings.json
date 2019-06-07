@@ -5,5 +5,5 @@
   "diagnostic.warningSign": "⚠",
   "tsserver.npm": "~/n/bin/npm",
   "tsserver.trace.server": "verbose",
-  "workspace.showOutput": true
+  "python.jediEnabled": false
 }

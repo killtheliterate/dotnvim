@@ -1,5 +1,5 @@
 " ZEEEE TRIGGERRRRR
-nnoremap <silent> <C-p> :FZF<CR>
+nnoremap <silent> <C-t> :FZF<CR>
 
 " The rest of this is just taken from the githubz
 " ...
