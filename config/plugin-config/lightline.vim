@@ -1,10 +1,9 @@
-" \ 'colorscheme': 'base16',
 let g:lightline = {
       \ 'mode_map': { 'c': 'NORMAL' },
       \ 'active': {
       \   'left': [ 
       \     [ 'mode', 'paste' ],
-      \     [ 'fugitive', 'filename' ] 
+      \     [ 'fugitive', 'filename', 'cocstatus', 'currentfunction', ] 
       \   ],
       \   'right': [
       \      [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ],
@@ -14,10 +13,10 @@ let g:lightline = {
       \   ]
       \ },
       \ 'component_expand': {
-      \   'linter_checking': 'lightline#ale#checking',
-      \   'linter_warnings': 'lightline#ale#warnings',
-      \   'linter_errors': 'lightline#ale#errors',
-      \   'linter_ok': 'lightline#ale#ok',
+      \   'linter_checking'  : 'lightline#ale#checking',
+      \   'linter_warnings'  : 'lightline#ale#warnings',
+      \   'linter_errors'    : 'lightline#ale#errors',
+      \   'linter_ok'        : 'lightline#ale#ok',
       \ },
       \ 'component_function': {
       \   'modified': 'LightlineModified',
@@ -28,12 +27,14 @@ let g:lightline = {
       \   'filetype': 'LightlineFiletype',
       \   'fileencoding': 'LightlineFileencoding',
       \   'mode': 'LightlineMode',
+      \   'cocstatus': 'coc#status',
+      \   'currentfunction': 'CocCurrentFunction'
       \ },
       \ 'component_type': {
-      \   'linter_checking': 'left',
-      \   'linter_warnings': 'warning',
-      \   'linter_errors': 'error',
-      \   'linter_ok': 'left',
+      \   'linter_checking'  : 'left',
+      \   'linter_warnings'  : 'warning',
+      \   'linter_errors'    : 'error',
+      \   'linter_ok'        : 'left',
       \ },
       \ 'branch symbol': '',
       \ 'readonly symbol': '',
@@ -41,6 +42,7 @@ let g:lightline = {
       \ 'separator': { 'left': '', 'right': '' },
       \ 'subseparator': { 'left': '', 'right': '' },
       \ }
+
 
 let g:lightline#ale#indicator_checking = "\uf110"
 let g:lightline#ale#indicator_warnings = "\uf071"
@@ -91,3 +93,9 @@ endfunction
 function! LightlineMode()
   return winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
+
+function! CocCurrentFunction()
+    return get(b:, 'coc_current_function', '')
+endfunction
+
+autocmd User CocDiagnosticChange call lightline#update()
