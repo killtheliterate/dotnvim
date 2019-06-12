@@ -1,1 +1,0 @@
-"" Tag configuration for tagbar
