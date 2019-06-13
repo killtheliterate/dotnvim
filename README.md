@@ -48,7 +48,7 @@ the base16-shell repo to add the appropriate stuff to your
 
 ## step [Coc](https://github.com/neoclide/coc.nvim)
 
-`:CocInstall coc-tsserver coc-json`
+`:CocInstall coc-tsserver coc-json coc-tslint-plugin coc-eslint`
 
 ## step yep
 
