@@ -36,7 +36,6 @@ the base16-shell repo to add the appropriate stuff to your
 * [myusuf3/numbers.vim](http://github.com/myusuf3/numbers.vim)
 * [neoclide/coc.nvim](https://github.com/neoclide/coc.nvim)
 * [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot)
-<!-- * [shougo/deoplete.nvim](http://github.com/sjl/shougo/deoplete.nvim) -->
 * [sjl/vitality.vim](http://github.com/sjl/vitality.vim)
 * [tomtom/tcomment_vim](http://github.com/tomtom/tcomment_vim)
 * [tpope/vim-eunuch](http://github.com/tpope/vim-eunuch)
@@ -45,6 +44,7 @@ the base16-shell repo to add the appropriate stuff to your
 * [tpope/vim-surround](http://github.com/tpope/vim-surround)
 * [w0rp/ale](https://github.com/w0rp/ale)
 * etc
+<!-- * [shougo/deoplete.nvim](http://github.com/sjl/shougo/deoplete.nvim) -->
 
 ## step [Coc](https://github.com/neoclide/coc.nvim)
 
