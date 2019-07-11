@@ -24,7 +24,7 @@ Plug 'junegunn/vim-easy-align'        " align stuff... like csv columns
 Plug 'kristijanhusak/vim-dirvish-git' " dirvish git stuff
 Plug 'matze/vim-move'                 " line-bubbling
 Plug 'maximbaz/lightline-ale'         " show lint errors in lightline
-Plug 'mechatroner/rainbow_csv'        " csv pretties
+" Plug 'mechatroner/rainbow_csv'        " csv pretties
 Plug 'mhinz/vim-signify'              " show git changes in gutter
 Plug 'myusuf3/numbers.vim'            " relative line numbering
 Plug 'sjl/vitality.vim'               " iterm2 + tmux fixes
@@ -42,7 +42,7 @@ Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 Plug 'junegunn/fzf.vim'
 
 "" IdIDE:
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 " Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'} " @see: https://github.com/Shougo/deoplete.nvim/wiki/Completion-Sources
 Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
