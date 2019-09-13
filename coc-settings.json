@@ -1,10 +1,11 @@
 {
+  "diagnostic.displayByAle": true,
   "diagnostic.errorSign": "✗",
   "diagnostic.hintSign": "➤",
   "diagnostic.infoSign": "i",
   "diagnostic.warningSign": "⚠",
-  "tsserver.npm": "~/n/bin/npm",
-  "tsserver.trace.server": "verbose",
   "python.jediEnabled": false,
-  "python.linting.flake8Enabled": true
+  "python.linting.flake8Enabled": true,
+  "tsserver.npm": "~/n/bin/npm",
+  "tsserver.trace.server": "verbose"
 }
