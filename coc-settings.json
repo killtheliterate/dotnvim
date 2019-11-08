@@ -1,8 +1,8 @@
 {
-  "diagnostic.displayByAle": true,
   "diagnostic.errorSign": "✗",
   "diagnostic.hintSign": "➤",
   "diagnostic.infoSign": "i",
+  "diagnostic.signOffset": 9999999,
   "diagnostic.warningSign": "⚠",
   "python.jediEnabled": false,
   "python.linting.flake8Enabled": true,

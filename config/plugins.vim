@@ -43,6 +43,13 @@ Plug 'junegunn/fzf.vim'
 
 "" IdIDE:
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-tslint-plugin', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+
 Plug 'sheerun/vim-polyglot'
 " Plug 'shougo/echodoc.vim'
 " Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'} " @see: https://github.com/Shougo/deoplete.nvim/wiki/Completion-Sources
