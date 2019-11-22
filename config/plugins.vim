@@ -23,8 +23,8 @@ Plug 'jiangmiao/auto-pairs'           " autocomplete brackets: @see: https://bit
 Plug 'junegunn/vim-easy-align'        " align stuff... like csv columns
 Plug 'kristijanhusak/vim-dirvish-git' " dirvish git stuff
 Plug 'matze/vim-move'                 " line-bubbling
-Plug 'maximbaz/lightline-ale'         " show lint errors in lightline
-" Plug 'mechatroner/rainbow_csv'        " csv pretties
+" Plug 'maximbaz/lightline-ale'         " show lint errors in lightline
+Plug 'mechatroner/rainbow_csv'        " csv pretties
 Plug 'mhinz/vim-signify'              " show git changes in gutter
 Plug 'myusuf3/numbers.vim'            " relative line numbering
 Plug 'sjl/vitality.vim'               " iterm2 + tmux fixes
@@ -43,17 +43,9 @@ Plug 'junegunn/fzf.vim'
 
 "" IdIDE:
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-tslint-plugin', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 
 Plug 'sheerun/vim-polyglot'
-" Plug 'shougo/echodoc.vim'
-" Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'} " @see: https://github.com/Shougo/deoplete.nvim/wiki/Completion-Sources
-Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
+" Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
 
 "" JaJavaScript:
 Plug 'heavenshell/vim-jsdoc'

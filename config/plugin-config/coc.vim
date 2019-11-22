@@ -18,6 +18,7 @@ set shortmess+=c
 " set signcolumn=yes
 set signcolumn=auto:2
 
+" let g:coc_global_extensions = '' " add extension names bere
 let g:coc_status_error_sign = '✗ '
 let g:coc_status_warning_sign = '⚠ '
 

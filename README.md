@@ -42,13 +42,19 @@ the base16-shell repo to add the appropriate stuff to your
 * [tpope/vim-fugitive](http://github.com/tpope/vim-fugitive)
 * [tpope/vim-repeat](http://github.com/tpope/vim-repeat)
 * [tpope/vim-surround](http://github.com/tpope/vim-surround)
-* [w0rp/ale](https://github.com/w0rp/ale)
 * etc
 <!-- * [shougo/deoplete.nvim](http://github.com/sjl/shougo/deoplete.nvim) -->
 
 ## step [Coc](https://github.com/neoclide/coc.nvim)
 
-`:CocInstall coc-tsserver coc-json coc-tslint-plugin coc-eslint`
+* coc-css
+* coc-eslint
+* coc-json
+* coc-python
+* coc-tslint-plugin
+* coc-tsserver
+
+`:CocInstall coc-css coc-eslint coc-json coc-python coc-tslint-plugin coc-tsserver`
 
 ## step yep
 

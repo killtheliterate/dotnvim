@@ -1,11 +1,18 @@
 {
+  "coc.preferences.formatOnSaveFiletypes": [],
   "diagnostic.errorSign": "✗",
   "diagnostic.hintSign": "➤",
   "diagnostic.infoSign": "i",
   "diagnostic.signOffset": 9999999,
   "diagnostic.warningSign": "⚠",
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
   "python.jediEnabled": false,
   "python.linting.flake8Enabled": true,
+  "suggest.echodocSupport": true,
+  "suggest.maxCompleteItemCount": 20,
   "tsserver.npm": "~/n/bin/npm",
-  "tsserver.trace.server": "verbose"
+  "tsserver.trace.server": "verbose",
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": true
 }
