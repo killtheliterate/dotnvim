@@ -6,7 +6,7 @@ set nobackup
 set nowritebackup
 
 " Better display for messages
-" set cmdheight=2
+set cmdheight=2
 
 " Smaller updatetime for CursorHold & CursorHoldI
 set updatetime=300
@@ -15,8 +15,10 @@ set updatetime=300
 set shortmess+=c
 
 " always show signcolumns
-set signcolumn=yes
+" set signcolumn=yes
+set signcolumn=auto:2
 
+" let g:coc_global_extensions = '' " add extension names bere
 let g:coc_status_error_sign = '✗ '
 let g:coc_status_warning_sign = '⚠ '
 

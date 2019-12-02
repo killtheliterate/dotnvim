@@ -23,8 +23,8 @@ Plug 'jiangmiao/auto-pairs'           " autocomplete brackets: @see: https://bit
 Plug 'junegunn/vim-easy-align'        " align stuff... like csv columns
 Plug 'kristijanhusak/vim-dirvish-git' " dirvish git stuff
 Plug 'matze/vim-move'                 " line-bubbling
-Plug 'maximbaz/lightline-ale'         " show lint errors in lightline
-" Plug 'mechatroner/rainbow_csv'        " csv pretties
+" Plug 'maximbaz/lightline-ale'         " show lint errors in lightline
+Plug 'mechatroner/rainbow_csv'        " csv pretties
 Plug 'mhinz/vim-signify'              " show git changes in gutter
 Plug 'myusuf3/numbers.vim'            " relative line numbering
 Plug 'sjl/vitality.vim'               " iterm2 + tmux fixes
@@ -43,11 +43,26 @@ Plug 'junegunn/fzf.vim'
 
 "" IdIDE:
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'sheerun/vim-polyglot'
-" Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'} " @see: https://github.com/Shougo/deoplete.nvim/wiki/Completion-Sources
-Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
 
-"" TtTtTheme: PRETTY PRETTY PRETTY PRETTY PRETTY PRETTY
+Plug 'sheerun/vim-polyglot'
+" Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
+
+"" JaJavaScript:
+Plug 'heavenshell/vim-jsdoc'
+Plug 'othree/javascript-libraries-syntax.vim'
+
+"" TyTyTypeScript:
+" Plug 'ianks/vim-tsx'
+" Plug 'leafgarland/typescript-vim'
+
+"" TyTyTypeScript:
+" Plug 'mxw/vim-jsx'
+" Plug 'leafgarland/typescript-vim'
+
+"" TyTyTypeScript:
+" Plug 'herringtondarkholme/yats.vim'
+
+" TtTtTheme: PRETTY PRETTY PRETTY PRETTY PRETTY PRETTY
 Plug 'chriskempson/base16-vim', {'do': 'git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell'}
 
 call plug#end()

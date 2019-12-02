@@ -17,7 +17,7 @@ set statusline=%{LinterStatus()}
 let g:ale_lint_delay = 0
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 'normal'
-let g:ale_set_signs = 0 
+let g:ale_set_signs = 1
 
 " au VimEnter,BufEnter,ColorScheme *
 "   \ exec "hi! ALEInfoLine
@@ -106,12 +106,12 @@ let g:ale_pattern_options = {
 
 let g:ale_linters = {
 \   'javascript': s:js_linters,
-\   'typescript': ['tsserver'], 
+\   'typescript': ['tsserver', 'eslint'], 
 \   'scss': ['stylelint'],
 \ }
 
 let g:ale_fixers = {
 \   'javascript': s:js_fixers,
-\   'typescript': ['tslint'],
+\   'typescript': ['tslint', 'eslint'],
 \   'scss': ['stylelint'],
 \ }

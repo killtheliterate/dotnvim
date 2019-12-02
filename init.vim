@@ -20,7 +20,7 @@ source $HOME/.config/nvim/config/tabs.vim
 "" plugin configuration
 "" ---------------------------------------------------------------------------
 
-source $HOME/.config/nvim/config/plugin-config/ale.vim
+" source $HOME/.config/nvim/config/plugin-config/ale.vim
 source $HOME/.config/nvim/config/plugin-config/coc.vim
 " source $HOME/.config/nvim/config/plugin-config/deoplete.vim
 source $HOME/.config/nvim/config/plugin-config/dirvish.vim
@@ -30,6 +30,7 @@ source $HOME/.config/nvim/config/plugin-config/lightline.vim
 source $HOME/.config/nvim/config/plugin-config/polyglot.vim
 source $HOME/.config/nvim/config/plugin-config/poppy.vim
 source $HOME/.config/nvim/config/plugin-config/vim-move.vim
+" source $HOME/.config/nvim/config/plugin-config/echodoc.vim
 
 "" ---------------------------------------------------------------------------
 
