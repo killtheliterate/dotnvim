@@ -42,14 +42,17 @@ Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 Plug 'junegunn/fzf.vim'
 
 "" IdIDE:
+Plug 'antoinemadec/coc-fzf'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 Plug 'sheerun/vim-polyglot'
 " Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
 
 "" JaJavaScript:
-Plug 'heavenshell/vim-jsdoc'
-Plug 'othree/javascript-libraries-syntax.vim'
+" Plug 'heavenshell/vim-jsdoc'
+" Plug 'leafgarland/typescript-vim'
+" Plug 'othree/javascript-libraries-syntax.vim'
+" Plug 'peitalin/vim-jsx-typescript'
+" Plug 'maxmellon/vim-jsx-pretty'
 
 "" TyTyTypeScript:
 " Plug 'ianks/vim-tsx'

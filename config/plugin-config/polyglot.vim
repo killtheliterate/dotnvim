@@ -1,7 +1,4 @@
-" let g:polyglot_disabled = ['typescript', 'typescript.tsx', 'tsx']
+" Various and myriad syntax highlighting modifications
 
-"" NOT POLYGLOT STUFF
-
-let g:javascript_plugin_jsdoc = 1
-let g:jsx_ext_required = 0
-let g:used_javascript_libs = 'underscore,requirejs,chai,jquery,ramda,react'
+" TypeScript:
+" let g:polyglot_disabled = ['typescriptreact', 'jsx', 'typescript', 'typescript.tsx', 'tsx']

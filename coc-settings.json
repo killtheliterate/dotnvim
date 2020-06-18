@@ -3,6 +3,7 @@
   "diagnostic.errorSign": "✗",
   "diagnostic.hintSign": "➤",
   "diagnostic.infoSign": "i",
+  "diagnostic.messageDelay": 1000,
   "diagnostic.signOffset": 9999999,
   "diagnostic.warningSign": "⚠",
   "eslint.autoFixOnSave": true,
@@ -14,5 +15,10 @@
   "tsserver.npm": "~/n/bin/npm",
   "tsserver.trace.server": "verbose",
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
-  "typescript.format.insertSpaceBeforeFunctionParenthesis": true
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "wxss.validate": false
 }
