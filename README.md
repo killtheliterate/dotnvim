@@ -54,12 +54,12 @@ the base16-shell repo to add the appropriate stuff to your
 * coc-python
 * coc-sql
 * coc-stylelintplus
-* coc-tslint-plugin
 * coc-tsserver
+* coc-vimlsp
 * coc-yaml
 <!-- * coc-yank -->
 
-`:CocInstall coc-css coc-eslint coc-json coc-lists coc-python coc-sql coc-stylelintplus coc-tslint-plugin coc-tsserver coc-yaml`
+`:CocInstall coc-css coc-eslint coc-json coc-lists coc-python coc-sql coc-stylelintplus coc-tsserver coc-vimlsp coc-yaml`
 
 ## step yep
 

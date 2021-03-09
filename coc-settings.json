@@ -4,14 +4,19 @@
   "diagnostic.hintSign": "➤",
   "diagnostic.infoSign": "i",
   "diagnostic.messageDelay": 1000,
-  "diagnostic.signOffset": 9999999,
+  /* "diagnostic.signOffset": 9999999, */
   "diagnostic.warningSign": "⚠",
   "eslint.autoFixOnSave": true,
-  "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  /* "eslint.enable": true, */
+  /* "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"], */
   "python.jediEnabled": false,
-  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Enabled": false,
   "suggest.echodocSupport": true,
   "suggest.maxCompleteItemCount": 20,
+  "tsserver.log": "verbose",
   "tsserver.npm": "~/n/bin/npm",
   "tsserver.trace.server": "verbose",
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
