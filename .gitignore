@@ -2,6 +2,7 @@
 .init.*
 .netrwhist
 .plugged
+/tags
 LanguageClient.log
 LanguageClientWarn.log
 LanguageServer.log

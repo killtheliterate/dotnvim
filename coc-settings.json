@@ -4,24 +4,18 @@
   "diagnostic.hintSign": "➤",
   "diagnostic.infoSign": "i",
   "diagnostic.messageDelay": 1000,
-  /* "diagnostic.signOffset": 9999999, */
   "diagnostic.warningSign": "⚠",
   "eslint.autoFixOnSave": true,
-  "eslint.codeAction.showDocumentation": {
-    "enable": true
-  },
-  /* "eslint.enable": true, */
-  /* "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"], */
-  "python.jediEnabled": false,
-  "python.linting.flake8Enabled": false,
+  "eslint.codeAction.showDocumentation": { "enable": true },
+  "eslint.quiet": true,
+  "python.linting.flake8Enabled": true,
   "suggest.echodocSupport": true,
   "suggest.maxCompleteItemCount": 20,
-  "tsserver.log": "verbose",
+  "tsserver.log": "off",
   "tsserver.npm": "~/n/bin/npm",
-  "tsserver.trace.server": "verbose",
+  "tsserver.trace.server": "off",
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
-
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
