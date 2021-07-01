@@ -13,11 +13,11 @@ call plug#begin('$HOME/.config/nvim/.plugged')
 "" PlPlPlugin:
 Plug 'justinmk/vim-dirvish'            " file navigation... F I R S T
 
+" Plug 'floobits/floobits-neovim'        " magic stuff
 Plug 'blueyed/vim-diminactive'         " dim inactive split
 Plug 'bounceme/poppy.vim'              " rainbows for parentheses
 Plug 'ciaranm/securemodelines'         " less haxx
 Plug 'editorconfig/editorconfig-vim'   " indent the same...
- "Plug 'floobits/floobits-neovim'       " magic stuff
 Plug 'itchyny/lightline.vim'           " an statusbar
 Plug 'jiangmiao/auto-pairs'            " autocomplete brackets: @see: https://bit.ly/2qQYZ0P
 Plug 'junegunn/vim-easy-align'         " align stuff... like csv columns
@@ -43,28 +43,10 @@ Plug 'junegunn/fzf.vim'
 
 "" IdIDE:
 Plug 'antoinemadec/coc-fzf'
+" Plug 'ludovicchabant/vim-gutentags', { 'for': 'python' }
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
-" Plug 'w0rp/ale', {'do': 'npm install -g standard'} " linting
-
-"" JaJavaScript:
-" Plug 'heavenshell/vim-jsdoc'
-" Plug 'leafgarland/typescript-vim'
-" Plug 'othree/javascript-libraries-syntax.vim'
-" Plug 'peitalin/vim-jsx-typescript'
-" Plug 'maxmellon/vim-jsx-pretty'
-
-"" TyTyTypeScript:
-" Plug 'ianks/vim-tsx'
-" Plug 'leafgarland/typescript-vim'
-
-"" TyTyTypeScript:
-" Plug 'mxw/vim-jsx'
-" Plug 'leafgarland/typescript-vim'
-
-"" TyTyTypeScript:
-" Plug 'herringtondarkholme/yats.vim'
 
 " TtTtTheme: PRETTY PRETTY PRETTY PRETTY PRETTY PRETTY
 Plug 'chriskempson/base16-vim', {'do': 'git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell'}

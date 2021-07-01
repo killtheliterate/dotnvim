@@ -22,11 +22,9 @@ source $HOME/.config/nvim/config/tabs.vim
 "" ---------------------------------------------------------------------------
 
 source $HOME/.config/nvim/config/plugin-config/coc-fzf.vim
-" source $HOME/.config/nvim/config/plugin-config/coc-yank.vim
 source $HOME/.config/nvim/config/plugin-config/coc.vim
 source $HOME/.config/nvim/config/plugin-config/dirvish.vim
 source $HOME/.config/nvim/config/plugin-config/easy-align.vim
-" source $HOME/.config/nvim/config/plugin-config/echodoc.vim
 source $HOME/.config/nvim/config/plugin-config/fzf.vim
 source $HOME/.config/nvim/config/plugin-config/lightline.vim
 source $HOME/.config/nvim/config/plugin-config/polyglot.vim
