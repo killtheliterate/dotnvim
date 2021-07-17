@@ -13,7 +13,7 @@ source $HOME/.config/nvim/config/plugins.vim
 "" ---------------------------------------------------------------------------
 
 source $HOME/.config/nvim/config/color.vim
-source $HOME/.config/nvim/config/general.vim
+runtime $HOME/.config/nvim/config/general.lua
 source $HOME/.config/nvim/config/highlight.vim
 source $HOME/.config/nvim/config/reveal.vim
 source $HOME/.config/nvim/config/tabs.vim

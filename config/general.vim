@@ -2,25 +2,22 @@
 "" ---------------------------------------------------------------------------
 "" The basixxx
 
-syntax on
 let mapleader = "\<Space>"
 
 "" A: mad settings
-set autoindent
-set backspace=indent,eol,start
 set clipboard^=unnamed,unnamedplus
 set colorcolumn=79
 set cursorline
 set expandtab
 set formatoptions+=w
-set formatoptions=qrn1
+set formatoptions+=qrn1
 set hidden
 set list
 set listchars+=extends:→
 set listchars+=precedes:←
 set listchars+=tab:\┆\
 set listchars+=trail:.
-set listchars=""
+" set listchars=""
 set mouse=a
 set mousehide
 set nobackup
@@ -30,20 +27,15 @@ set nowrap
 set number
 set sessionoptions=resize,winpos,winsize,buffers,tabpages,folds,curdir,help
 set shiftwidth=2
-set showmode
 set sidescroll=1
 set splitbelow
 set splitright
 set tabstop=2
 set textwidth=78
-set timeoutlen=1000
-set ttimeoutlen=10
 
 "" B: search
 nmap <silent> <Space>c :nohlsearch<CR>
-set hlsearch
 set ignorecase
-set incsearch
 set smartcase
 
 "" C: undo
