@@ -51,7 +51,7 @@ the base16-shell repo to add the appropriate stuff to your
 * coc-eslint
 * coc-json
 * coc-lists
-<!-- * coc-pyright -->
+* coc-pyright
 * coc-python
 * coc-sql
 * coc-stylelintplus

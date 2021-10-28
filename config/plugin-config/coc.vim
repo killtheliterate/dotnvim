@@ -1,3 +1,20 @@
+let g:coc_global_extensions = [
+      \ 'coc-css',
+      \ 'coc-docker',
+      \ 'coc-eslint',
+      \ 'coc-git',
+      \ 'coc-go',
+      \ 'coc-jedi',
+      \ 'coc-json',
+      \ 'coc-lists',
+      \ 'coc-pyright',
+      \ 'coc-sql',
+      \ 'coc-stylelintplus',
+      \ 'coc-tsserver',
+      \ 'coc-vimlsp',
+      \ 'coc-yaml',
+      \ ]
+
 " TextEdit might fail if hidden is not set.
 set hidden
 
@@ -157,3 +174,4 @@ function! s:cocActionsOpenFromSelected(type) abort
 endfunction
 xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
 nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+
