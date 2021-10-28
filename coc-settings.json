@@ -7,7 +7,7 @@
   "diagnostic.warningSign": "⚠",
   "eslint.autoFixOnSave": true,
   "eslint.codeAction.showDocumentation": { "enable": true },
-  "eslint.quiet": true,
+  "eslint.quiet": false,
   "python.linting.flake8Enabled": true,
   "suggest.echodocSupport": true,
   "suggest.maxCompleteItemCount": 20,

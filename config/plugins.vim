@@ -44,7 +44,7 @@ Plug 'junegunn/fzf.vim'
 "" IdIDE:
 Plug 'antoinemadec/coc-fzf'
 " Plug 'ludovicchabant/vim-gutentags', { 'for': 'python' }
-Plug 'ludovicchabant/vim-gutentags'
+" Plug 'ludovicchabant/vim-gutentags'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 

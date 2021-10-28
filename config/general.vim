@@ -75,3 +75,7 @@ nnoremap <leader>rtw :%s/\s\+$//e<CR>
 
 " Ooh, cool
 set inccommand=nosplit
+
+" dynamic colorcolumn
+au BufNewFile,BufRead *.ts setlocal colorcolumn=120
+au BufNewFile,BufRead *.tsx setlocal colorcolumn=120
