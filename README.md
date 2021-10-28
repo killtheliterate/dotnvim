@@ -43,21 +43,10 @@ the base16-shell repo to add the appropriate stuff to your
 * [tpope/vim-repeat](http://github.com/tpope/vim-repeat)
 * [tpope/vim-surround](http://github.com/tpope/vim-surround)
 * etc
-<!-- * [shougo/deoplete.nvim](http://github.com/sjl/shougo/deoplete.nvim) -->
 
 ## step [Coc](https://github.com/neoclide/coc.nvim)
 
-* coc-css
-* coc-eslint
-* coc-json
-* coc-lists
-* coc-pyright
-* coc-python
-* coc-sql
-* coc-stylelintplus
-* coc-tsserver
-* coc-vimlsp
-* coc-yaml
+[list of coc extensions](https://github.com/killtheliterate/dotnvim/blob/master/config/plugin-config/coc.vim#L1)
 
 `:CocInstall coc-css coc-eslint coc-json coc-lists coc-pyright coc-sql coc-stylelintplus coc-tsserver coc-vimlsp coc-yaml`
 
