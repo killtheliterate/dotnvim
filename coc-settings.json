@@ -1,5 +1,6 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [],
+  "css.validate": false,
   "diagnostic.errorSign": "✗",
   "diagnostic.hintSign": "➤",
   "diagnostic.infoSign": "i",
@@ -8,7 +9,9 @@
   "eslint.autoFixOnSave": true,
   "eslint.codeAction.showDocumentation": { "enable": true },
   "eslint.quiet": false,
+  "less.validate": false,
   "python.linting.flake8Enabled": true,
+  "scss.validate": false,
   "suggest.echodocSupport": true,
   "suggest.maxCompleteItemCount": 20,
   "tsserver.log": "off",
@@ -16,8 +19,6 @@
   "tsserver.trace.server": "off",
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
+  "workspace.bottomUpFiletypes": ["python"],
   "wxss.validate": false
 }

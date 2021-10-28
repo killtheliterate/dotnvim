@@ -44,9 +44,10 @@ Plug 'junegunn/fzf.vim'
 "" IdIDE:
 Plug 'antoinemadec/coc-fzf'
 " Plug 'ludovicchabant/vim-gutentags', { 'for': 'python' }
-" Plug 'ludovicchabant/vim-gutentags'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'sheerun/vim-polyglot'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
+Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'main' }
+" Plug 'sheerun/vim-polyglot'
 
 " TtTtTheme: PRETTY PRETTY PRETTY PRETTY PRETTY PRETTY
 Plug 'chriskempson/base16-vim', {'do': 'git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell'}
