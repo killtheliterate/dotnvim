@@ -7,6 +7,10 @@
 " let g:coc_node_args = ['--nolazy', '--inspect-brk=6045']
 " let g:node_client_debug = 1
 
+" @see: https://blog.claude.nl/tech/howto/Setup-Neovim-as-Python-IDE-with-virtualenvs/
+let g:python3_host_prog="~/venvs/neovim/bin/python"
+let g:loaded_perl_provider = 0
+
 source $HOME/.config/nvim/config/plugins.vim
 
 "" the things

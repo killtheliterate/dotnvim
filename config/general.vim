@@ -79,3 +79,13 @@ set inccommand=nosplit
 " dynamic colorcolumn
 au BufNewFile,BufRead *.ts setlocal colorcolumn=120
 au BufNewFile,BufRead *.tsx setlocal colorcolumn=120
+
+" @see: https://dockyard.com/blog/2013/09/26/vim-moving-lines-aint-hard
+" vim-move stopped working
+" maybe try https://github.com/fedepujol/move.nvim
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+inoremap <C-j> <ESC>:m .+1<CR>==gi
+inoremap <C-k> <ESC>:m .-2<CR>==gi
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
