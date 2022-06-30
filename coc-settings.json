@@ -1,24 +1,41 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [],
-  "css.validate": false,
+  "coc.preferences.extensionUpdateCheck": "daily",
+
   "diagnostic.errorSign": "✗",
   "diagnostic.hintSign": "➤",
   "diagnostic.infoSign": "i",
   "diagnostic.messageDelay": 1000,
   "diagnostic.warningSign": "⚠",
+
   "eslint.autoFixOnSave": true,
   "eslint.codeAction.showDocumentation": { "enable": true },
   "eslint.quiet": false,
+
   "less.validate": false,
-  "python.linting.flake8Enabled": true,
   "scss.validate": false,
-  "suggest.echodocSupport": true,
+  "css.validate": false,
+
   "suggest.maxCompleteItemCount": 20,
+  "suggest.timeout": 5000,
+
   "tsserver.log": "off",
   "tsserver.npm": "~/n/bin/npm",
   "tsserver.trace.server": "off",
+
+  "typescript.autoClosingTags": false,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+
   "workspace.bottomUpFiletypes": ["python"],
-  "wxss.validate": false
+
+  "wxss.validate": false,
+
+  "python.formatting.blackPath": "~/venvs/black/bin/black",
+  "python.formatting.provider": "black",  
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": true,  
+  "python.linting.pylintPath": "~/venvs/pylint/bin/pylint",
+  "python.pythonPath": "python",  
+  "python.venvPath": "~/venvs/"
 }
