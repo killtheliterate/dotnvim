@@ -25,6 +25,10 @@ source $HOME/.config/nvim/config/tabs.vim
 "" plugin configuration
 "" ---------------------------------------------------------------------------
 
+" source $HOME/.config/nvim/config/plugin-config/polyglot.vim
+" source $HOME/.config/nvim/config/plugin-config/poppy.vim
+" source $HOME/.config/nvim/config/plugin-config/vim-move.vim
+" source $HOME/.config/nvim/config/plugin-config/base16-lua.vim
 source $HOME/.config/nvim/config/plugin-config/coc-fzf.vim
 source $HOME/.config/nvim/config/plugin-config/coc.vim
 source $HOME/.config/nvim/config/plugin-config/ctags.vim
@@ -32,10 +36,7 @@ source $HOME/.config/nvim/config/plugin-config/dirvish.vim
 source $HOME/.config/nvim/config/plugin-config/easy-align.vim
 source $HOME/.config/nvim/config/plugin-config/fzf.vim
 source $HOME/.config/nvim/config/plugin-config/lightline.vim
-source $HOME/.config/nvim/config/plugin-config/polyglot.vim
-source $HOME/.config/nvim/config/plugin-config/poppy.vim
 source $HOME/.config/nvim/config/plugin-config/tree-sitter.vim
-source $HOME/.config/nvim/config/plugin-config/vim-move.vim
 
 "" ---------------------------------------------------------------------------
 
