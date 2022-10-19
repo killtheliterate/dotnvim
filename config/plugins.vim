@@ -33,6 +33,7 @@ Plug 'tpope/vim-eunuch'                " vim + bash stuff
 Plug 'tpope/vim-fugitive'              " git stuff... mostly :Git blame
 Plug 'tpope/vim-repeat'                " repeat operator for more stuff
 Plug 'tpope/vim-surround'              " objects for surround stuff
+Plug 'tribela/vim-transparent'         " guake
 
 "" EtEtEtC:
 Plug 'ryanoasis/vim-devicons'
