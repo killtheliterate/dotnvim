@@ -7,6 +7,7 @@ let g:coc_global_extensions = [
       \ 'coc-go',
       \ 'coc-json',
       \ 'coc-lists',
+      \ 'coc-prettier',
       \ 'coc-pyright',
       \ 'coc-sql',
       \ 'coc-stylelintplus',
