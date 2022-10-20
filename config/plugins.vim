@@ -13,16 +13,12 @@ call plug#begin('$HOME/.config/nvim/.plugged')
 "" PlPlPlugin:
 Plug 'justinmk/vim-dirvish'            " file navigation... F I R S T
 
-" Plug 'floobits/floobits-neovim'        " magic stuff
 Plug 'blueyed/vim-diminactive'         " dim inactive split
-" Plug 'bounceme/poppy.vim'              " rainbows for parentheses
 Plug 'ciaranm/securemodelines'         " less haxx
 Plug 'editorconfig/editorconfig-vim'   " indent the same...
 Plug 'itchyny/lightline.vim'           " an statusbar
-" Plug 'jiangmiao/auto-pairs'            " autocomplete brackets: @see: https://bit.ly/2qQYZ0P
 Plug 'junegunn/vim-easy-align'         " align stuff... like csv columns
 Plug 'kristijanhusak/vim-dirvish-git'  " dirvish git stuff
-" Plug 'matze/vim-move'                  " line-bubbling
 Plug 'mhinz/vim-signify'               " show git changes in gutter
 Plug 'myusuf3/numbers.vim'             " relative line numbering
 Plug 'nathanaelkane/vim-indent-guides' " what it says
@@ -32,7 +28,7 @@ Plug 'tpope/vim-eunuch'                " vim + bash stuff
 Plug 'tpope/vim-fugitive'              " git stuff... mostly :Git blame
 Plug 'tpope/vim-repeat'                " repeat operator for more stuff
 Plug 'tpope/vim-surround'              " objects for surround stuff
-Plug 'tribela/vim-transparent'         " guake
+Plug 'tribela/vim-transparent'         " guake looking niiiiice
 
 "" EtEtEtC:
 Plug 'ryanoasis/vim-devicons'
@@ -42,10 +38,7 @@ Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 Plug 'junegunn/fzf.vim'
 
 "" IdIDE:
-" Plug 'ludovicchabant/vim-gutentags'
-" Plug 'sheerun/vim-polyglot'
-" Plug 'norcalli/nvim-base16.lua'
-" Plug 'norcalli/nvim.lua'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
@@ -58,6 +51,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " TtTtTheme: PRETTY PRETTY PRETTY PRETTY PRETTY PRETTY
 Plug 'chriskempson/base16-vim', {'do': 'git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell'}
+Plug 'daviesjamie/vim-base16-lightline'
 " @see: https://github.com/RRethy/nvim-base16
 
 call plug#end()

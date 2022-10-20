@@ -30,21 +30,11 @@ let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
 
 set termguicolors
 
-" func! GetBase16(id)
-"   if filereadable(expand("~/.vimrc_background"))
-"     let base16colorspace=256
-"     source ~/.vimrc_background
-"   endif
-" endf
-
 "" base16:
 " ----------------------------------------------------------------------------
 
-" call GetBase16('init')
-" call timer_start(500, 'GetBase16', {'repeat':-1})
-
 if exists('$BASE16_THEME')
       \ && (!exists('g:colors_name') || g:colors_name != 'base16-$BASE16_THEME')
-    " let base16colorspace=256
+    let base16colorspace=256
     colorscheme base16-$BASE16_THEME
 endif
