@@ -26,8 +26,6 @@
 
   "workspace.bottomUpFiletypes": ["python"],
 
-  "wxss.validate": false,
-
   "python.formatting.blackPath": "~/venvs/black/bin/black",
   "python.formatting.provider": "black",  
   "python.linting.flake8Enabled": true,
@@ -64,5 +62,40 @@
     "unit": "\uf475",
     "value": "\uf89f",
     "variable": "\ue71b"
+  },
+
+  "languageserver": {
+    "purescript": {
+      "command": "purescript-language-server",
+      "args": ["--stdio"],
+      "filetypes": ["purescript"],
+      "trace.server": "off",
+      "rootPatterns": ["bower.json", "psc-package.json", "spago.dhall"],
+      "settings": {
+        "purescript": {
+          "addSpagoSources": true,
+          "addNpmPath": true,
+          "formatter": "purs-tidy"
+        }
+      }
+    },
+
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": [ "*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml" ],
+      "filetypes": ["haskell", "lhaskell"],
+      "settings": {
+        "haskell": {
+          "checkParents": "CheckOnSave",
+          "checkProject": true,
+          "maxCompletions": 40,
+          "formattingProvider": "ormolu",
+          "plugin": {
+            "stan": { "globalOn": true }
+          }
+        }
+      }
+    }
   }
 }

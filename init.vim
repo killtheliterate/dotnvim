@@ -11,6 +11,7 @@
 let g:python3_host_prog="~/venvs/neovim/bin/python"
 let g:loaded_perl_provider = 0
 
+source $HOME/.config/nvim/config/plugin-config/polyglot.vim
 source $HOME/.config/nvim/config/plugins.vim
 
 "" the things
@@ -20,6 +21,7 @@ source $HOME/.config/nvim/config/color.vim
 source $HOME/.config/nvim/config/general.vim
 source $HOME/.config/nvim/config/highlight.vim
 source $HOME/.config/nvim/config/reveal.vim
+source $HOME/.config/nvim/config/spelling.vim
 source $HOME/.config/nvim/config/tabs.vim
 
 "" plugin configuration
