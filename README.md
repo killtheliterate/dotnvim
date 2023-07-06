@@ -1,3 +1,7 @@
+# PS - `lua` based configuration
+
+I'm just using this configuration now -> https://github.com/killtheliterate/dotluavim
+
 # dear neovim,
 
 My editor setup. Plugin management is handled by [vim-plug](http://github.com/junegunn/vim-plug).
